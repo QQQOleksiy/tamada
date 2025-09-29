@@ -1,4 +1,6 @@
 import { v2 as cloudinary } from 'cloudinary';
+import fs from 'fs';
+import path from 'path';
 
 // Налаштування Cloudinary
 cloudinary.config({
@@ -7,63 +9,6 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-// Початкові дані меню
-const initialMenuData = {
-  "side_dishes": {
-    "title": {
-      "en": "Side Entree",
-      "uk": "Гарніри"
-    },
-    "items": [
-      {
-        "en": {
-          "name": "Caucasian style potatoes",
-          "weight": "250g",
-          "price": "99₴"
-        },
-        "uk": {
-          "name": "Картопля по-грузинськи",
-          "weight": "300г",
-          "price": "129₴"
-        }
-      },
-      {
-        "en": {
-          "name": "Homemade potatoes",
-          "weight": "250g",
-          "price": "99₴"
-        },
-        "uk": {
-          "name": "Картопля по-домашньому",
-          "weight": "300г",
-          "price": "129₴"
-        }
-      }
-    ]
-  },
-  "salads_and_cold_appetizers": {
-    "title": {
-      "en": "Salads & Cold Appetizers",
-      "uk": "Салати та холодні закуски"
-    },
-    "items": [
-      {
-        "en": {
-          "name": "Georgian Salad with walnuts",
-          "weight": "280g",
-          "price": "229₴"
-        },
-        "uk": {
-          "name": "Салат грузинський",
-          "description": "(огірок, помідор, горіх.паста)",
-          "weight": "300г",
-          "price": "259₴"
-        }
-      }
-    ]
-  }
-};
-
 export default async function handler(req, res) {
   // Дозволяємо тільки POST запити
   if (req.method !== 'POST') {
@@ -71,8 +16,16 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Завантажуємо початкові дані в Cloudinary
-    const menuJson = JSON.stringify(initialMenuData, null, 2);
+    // Читаємо дані з локального JSON файлу
+    const menuPath = path.join(process.cwd(), 'data', 'tm-menu.json');
+    const menuFile = fs.readFileSync(menuPath, 'utf8');
+    const menuData = JSON.parse(menuFile);
+    
+    // Беремо тільки меню (без обгортки "menu")
+    const menuToUpload = menuData.menu || menuData;
+
+    // Завантажуємо меню в Cloudinary
+    const menuJson = JSON.stringify(menuToUpload, null, 2);
     const result = await cloudinary.uploader.upload(
       `data:application/json;base64,${Buffer.from(menuJson).toString('base64')}`,
       {
@@ -85,12 +38,12 @@ export default async function handler(req, res) {
 
     res.status(200).json({ 
       success: true,
-      message: 'Initial menu data uploaded successfully',
+      message: 'Full menu data uploaded successfully from tm-menu.json',
       url: result.secure_url
     });
     
   } catch (error) {
-    console.error('Error uploading initial menu:', error);
-    res.status(500).json({ error: 'Error uploading initial menu data: ' + error.message });
+    console.error('Error uploading menu:', error);
+    res.status(500).json({ error: 'Error uploading menu data: ' + error.message });
   }
 }
