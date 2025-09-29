@@ -1,0 +1,1707 @@
+{
+    "menu": {
+      "side_dishes": {
+        "title": {
+          "en": "Side Entree",
+          "uk": "Гарніри"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Caucasian style potatoes",
+              "weight": "250g",
+              "price": "99₴"
+            },
+            "uk": {
+              "name": "Картопля по-грузинськи",
+              "weight": "300г",
+              "price": "129₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Homemade potatoes",
+              "weight": "250g",
+              "price": "99₴"
+            },
+            "uk": {
+              "name": "Картопля по-домашньому",
+              "weight": "300г",
+              "price": "129₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Grilled vegetables",
+              "description": "(eggplant, zucchini, bell peppers, tomatoes, onions, mushrooms)",
+              "weight": "300g",
+              "price": "229₴"
+            },
+            "uk": {
+              "name": "Овочі гриль",
+              "description": "(баклажан, кабачок, болгарський перець, помідор, цибуля, гриби)",
+              "weight": "300г",
+              "price": "249₴"
+            }
+          }
+        ]
+      },
+      "salads_and_cold_appetizers": {
+        "title": {
+          "en": "Salads & Cold Appetizers",
+          "uk": "Салати та холодні закуски"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Vegetable platter",
+              "description": "(tomato, cucumber, bell pepper)",
+              "weight": "280g",
+              "price": "219₴"
+            },
+            "uk": {
+              "name": "Овочеве плато",
+              "description": "(помідор, огірок, перець болгарський)",
+              "weight": "300г",
+              "price": "239₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Georgian Salad with walnuts",
+              "weight": "280g",
+              "price": "229₴"
+            },
+            "uk": {
+              "name": "Салат грузинський",
+              "description": "(огірок, помідор, горіх.паста)",
+              "weight": "300г",
+              "price": "259₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Chicken Salad",
+              "description": "(chicken fillet, cucumber, lettuce, sauce)",
+              "weight": "280g",
+              "price": "229₴"
+            },
+            "uk": {
+              "name": "Салат курячий",
+              "description": "(куряче Філе, огірок, листя салату, соус)",
+              "weight": "300г",
+              "price": "259₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Platter of Georgian pickles",
+              "description": "(cucumber, tomato, garlic, cabbage)",
+              "weight": "280g",
+              "price": "209₴"
+            },
+            "uk": {
+              "name": "Плато грузинських солінь",
+              "description": "(огірок, помідор, часник, капуста)",
+              "weight": "300г",
+              "price": "249₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Badrijani",
+              "description": "(fried eggplant in nut paste)",
+              "weight": "250g",
+              "price": "239₴"
+            },
+            "uk": {
+              "name": "Бадріджані",
+              "description": "(баклажан смажений в горіх.пасті)",
+              "weight": "270г",
+              "price": "259₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Ajapsandali",
+              "description": "(eggplant, bell peppers)",
+              "weight": "280g",
+              "price": "209₴"
+            },
+            "uk": {
+              "name": "Аджапсандалі",
+              "description": "(баклажан, перець болгарський, кабачки)",
+              "weight": "300г",
+              "price": "269₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Pkhali",
+              "description": "(spinach in nut paste)",
+              "weight": "250g",
+              "price": "209₴"
+            },
+            "uk": {
+              "name": "Пхалі",
+              "description": "(шпинат у горіховій пасті)",
+              "weight": "250г",
+              "price": "209₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Assorted pkhali",
+              "description": "(bell peppers, eggplant in nut paste)",
+              "weight": "350g",
+              "price": "249₴"
+            },
+            "uk": {
+              "name": "Асорті пхалі",
+              "description": "(посезонно) (перець, баклажан в горіх. пасті)",
+              "weight": "370г",
+              "price": "279₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Cheese platter",
+              "description": "(with honey)",
+              "weight": "160g",
+              "price": "219₴"
+            },
+            "uk": {
+              "name": "Сирна тарілка",
+              "weight": "180г",
+              "price": "249₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Guruli salad (chicken)",
+              "description": "(chicken fillet, radish, bell pepper, lettuce, walnut paste)",
+              "weight": "300g",
+              "price": "249₴"
+            },
+            "uk": {
+              "name": "Салат Гурулі куряче",
+              "description": "(куряче філе,редиска,болгарський перець,листя салату,горіхова паста)",
+              "weight": "300г",
+              "price": "269₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Guruli salad (beef)",
+              "description": "(beef, radish, bell pepper)",
+              "weight": "300g",
+              "price": "249₴"
+            },
+            "uk": {
+              "name": "Салат Гурулі яловиче",
+              "description": "(яловичина,редиска,болгарський перець)",
+              "weight": "300г",
+              "price": "249₴"
+            }
+          }
+        ]
+      },
+      "soups": {
+        "title": {
+          "en": "Soup",
+          "uk": "Перші страви"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Kharcho",
+              "description": "(soup with beef, rice and Georgian spices)",
+              "weight": "400g",
+              "price": "199₴"
+            },
+            "uk": {
+              "name": "Харчо",
+              "description": "(суп з яловичиною, рисом та грузинськими приправами)",
+              "weight": "400г",
+              "price": "229₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Chikhirtma",
+              "description": "(chicken broth with Georgian spices)",
+              "weight": "400g",
+              "price": "189₴"
+            },
+            "uk": {
+              "name": "Чихіртма",
+              "description": "(курячий бульйон з грузинськими приправами)",
+              "weight": "400г",
+              "price": "219₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Khashlama",
+              "description": "(soup with lamb, herbs and Georgian spices)",
+              "weight": "400g",
+              "price": "199₴"
+            },
+            "uk": {
+              "name": "Хашлама",
+              "description": "(суп з бараниною, зеленню та грузинськими приправами)",
+              "weight": "400г",
+              "price": "229₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Broth of khinkali",
+              "description": "(broth with greens and khinkali kalakuri 5 pieces.)",
+              "weight": "400g",
+              "price": "189₴"
+            },
+            "uk": {
+              "name": "Хінкалі-бульйон",
+              "description": "(бульйон з зеленню та хінкалями калакурі 5шт.)",
+              "weight": "400г",
+              "price": "219₴"
+            }
+          }
+        ]
+      },
+      "baked_goods": {
+        "title": {
+          "en": "Baked Goods",
+          "uk": "Випічка"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Imeruli khachapuri",
+              "description": "(with suluguni cheese)",
+              "weight": "400g",
+              "price": "189₴"
+            },
+            "uk": {
+              "name": "Хачапурі по-імеретинськи",
+              "description": "(з сиром сулугуні)",
+              "weight": "400г",
+              "price": "219₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Megruli khachapuri",
+              "description": "(with suluguni cheese and cheese crust)",
+              "weight": "430g",
+              "price": "199₴"
+            },
+            "uk": {
+              "name": "Хачапурі по-мегрельськи",
+              "description": "(з сиром сулугуні та сирною скоринкою)",
+              "weight": "430г",
+              "price": "229₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Royal khachapuri",
+              "description": "(with suluguni cheese, cheese crust topped with pieces of melted cheese)",
+              "weight": "450g",
+              "price": "209₴"
+            },
+            "uk": {
+              "name": "Хачапурі по-королівськи",
+              "description": "(з сиром сулугуні, сирною скоринкою та шматочками розплавленого сиру зверху)",
+              "weight": "450г",
+              "price": "239₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Kubdari",
+              "description": "(Georgian felled bread that contains chunks of meat spices and onions)",
+              "weight": "420g",
+              "price": "209₴"
+            },
+            "uk": {
+              "name": "Хачапурі Кубдарі",
+              "description": "(з м'ясом)",
+              "weight": "420г",
+              "price": "239₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Kubdari with cheese",
+              "description": "(with meat and cheese)",
+              "weight": "450g",
+              "price": "219₴"
+            },
+            "uk": {
+              "name": "Хачапурі Кубдарі з сиром",
+              "description": "(з м'ясом та сиром)",
+              "weight": "450г",
+              "price": "249₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Lobiani",
+              "description": "(traditional Georgian dish of bean-filled bread)",
+              "weight": "400g",
+              "price": "189₴"
+            },
+            "uk": {
+              "name": "Хачапурі Лобіані",
+              "description": "(з квасолею)",
+              "weight": "400г",
+              "price": "219₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Adjaruli khachapuri",
+              "description": "(pie sauce with cheese filing and egg yolk)",
+              "weight": "400g",
+              "price": "229₴"
+            },
+            "uk": {
+              "name": "Хачапурі по-аджарськи",
+              "description": "(пиріг-човник з сирною начинкою та яєчним жовтком)",
+              "weight": "400г",
+              "price": "259₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Khachapuri Ispanakhu",
+              "description": "(with cheese and spinach)",
+              "weight": "420g",
+              "price": "189₴"
+            },
+            "uk": {
+              "name": "Хачапурі Іспанахи",
+              "description": "(з сиром та шпинатом)",
+              "weight": "420г",
+              "price": "219₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Special khachapuri TAMADA",
+              "description": "(with cheese, meat and spinach)",
+              "weight": "600g",
+              "price": "239₴"
+            },
+            "uk": {
+              "name": "Фірмовий хачапурі Тамада",
+              "description": "(з сиром, м'ясом та шпинатом)",
+              "weight": "600г",
+              "price": "269₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Georgian bread, Shoti",
+              "description": "(own baking)",
+              "weight": "250g",
+              "price": "39₴"
+            },
+            "uk": {
+              "name": "Грузинський хліб",
+              "description": "(власної випічки)",
+              "weight": "250г",
+              "price": "39₴"
+            }
+          }
+        ]
+      },
+      "khinkali": {
+        "title": {
+          "en": "Khinkali",
+          "uk": "Хінкалі"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Khinkali with meat",
+              "weight": "1 piece",
+              "price": "35₴",
+              "note": "(minimum order - 5 pieces)"
+            },
+            "uk": {
+              "name": "Хінкалі з м'ясом",
+              "weight": "1 шт",
+              "price": "35₴",
+              "note": "(мінімальне замовлення - 5штук)"
+            }
+          },
+          {
+            "en": {
+              "name": "Khinkali with cheese",
+              "weight": "1 piece",
+              "price": "35₴",
+              "note": "(minimum order - 5 pieces)"
+            },
+            "uk": {
+              "name": "Хінкалі з сиром",
+              "weight": "1 шт",
+              "price": "35₴",
+              "note": "(мінімальне замовлення - 5штук)"
+            }
+          },
+          {
+            "en": {
+              "name": "Fried khinkali",
+              "weight": "1 piece",
+              "price": "40₴",
+              "note": "(minimum order - 5 pieces)"
+            },
+            "uk": {
+              "name": "Хінкалі смажені",
+              "weight": "1 шт",
+              "price": "40₴",
+              "note": "(мінімальне замовлення - 5штук)"
+            }
+          }
+        ]
+      },
+      "hot_entree": {
+        "title": {
+          "en": "Hot Entree",
+          "uk": "Гарячі страви"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Mushrooms baked with suluguni",
+              "description": "(champignon, cheese suluguni)",
+              "weight": "250g",
+              "price": "219₴"
+            },
+            "uk": {
+              "name": "Гриби на кеці",
+              "description": "(смажені шампіньйони з сирною начинкою сулугуні)",
+              "weight": "250г",
+              "price": "249₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Chkmeruli",
+              "description": "(fried chicken in creamy-garlic sauce)",
+              "weight": "300g",
+              "price": "239₴"
+            },
+            "uk": {
+              "name": "Чкмерулі",
+              "description": "(смажене куряче стегно в вершково-часниковому соусі)",
+              "weight": "300г",
+              "price": "259₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Lobio",
+              "description": "(red beans with Georgian spices)",
+              "weight": "250g",
+              "price": "219₴"
+            },
+            "uk": {
+              "name": "Лобіо по-грузинськи",
+              "description": "(квасоля з грузинськими приправами)",
+              "weight": "250г",
+              "price": "239₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Chanakhi with a bread cap",
+              "description": "(potatoes, meat with a sleeve of yeasted dough)",
+              "weight": "300g",
+              "price": "239₴"
+            },
+            "uk": {
+              "name": "Чанахи з хлібною шапочкою",
+              "description": "(картопля, м'ясо, під шапочкою дріждьового тіста)",
+              "weight": "300г",
+              "price": "259₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Satsivi",
+              "description": "(chicken in nut paste)",
+              "weight": "300g",
+              "price": "249₴"
+            },
+            "uk": {
+              "name": "Сациві",
+              "description": "(курка в горіховій пасті)",
+              "weight": "300г",
+              "price": "269₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Ojakhuri",
+              "description": "(stewed pork with potatoes, onions, garlic)",
+              "weight": "300g",
+              "price": "249₴"
+            },
+            "uk": {
+              "name": "Оджахурі",
+              "description": "(тушкована свинина, картопля, цибуля, часник)",
+              "weight": "300г",
+              "price": "269₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Chashushuli",
+              "description": "(stewed veal in tomato sauce)",
+              "weight": "300g",
+              "price": "259₴"
+            },
+            "uk": {
+              "name": "Чашушулі",
+              "description": "(тушкована телятина в томатному соусі)",
+              "weight": "300г",
+              "price": "279₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Lamb with vegetables",
+              "description": "(stewed lamb, bulgarian pepper, eggplant, zucchini, onions, greens)",
+              "weight": "300g",
+              "price": "249₴"
+            },
+            "uk": {
+              "name": "Баранина з овочами",
+              "description": "(тушкована баранина, перець болгарський, баклажан, кабачок, цибуля, зелень)",
+              "weight": "300г",
+              "price": "269₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Trout",
+              "weight": "for 100g",
+              "price": "119₴"
+            },
+            "uk": {
+              "name": "Форель",
+              "weight": "за 100г",
+              "price": "129₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Fried thigh in tkemali sauce",
+              "weight": "300g",
+              "price": "249₴"
+            },
+            "uk": {
+              "name": "Смажене стегно в соусі ткемалі",
+              "weight": "300г",
+              "price": "249₴"
+            }
+          }
+        ]
+      },
+      "special_from_the_grill": {
+        "title": {
+          "en": "Special from the Grill",
+          "uk": "Страви на грилі"
+        },
+        "note": {
+          "en": "(barbecue - the minimum order 200-240g for 1 skewer)",
+          "uk": "(шашлик - мінімальне замовлення 200-240г за 1 шампур)"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Lula veal kebab",
+              "description": "(with sauce)",
+              "weight": "160/220g",
+              "price": "189₴"
+            },
+            "uk": {
+              "name": "Люля-кебаб з телятиною",
+              "description": "(з соусом)",
+              "weight": "160/220г",
+              "price": "209₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Lula lamb kebab",
+              "description": "(with sauce)",
+              "weight": "160/220g",
+              "price": "199₴"
+            },
+            "uk": {
+              "name": "Люля-кебаб з бараниною",
+              "description": "(з соусом)",
+              "weight": "160/220г",
+              "price": "219₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Pork shashlik",
+              "weight": "for 100g",
+              "price": "109₴"
+            },
+            "uk": {
+              "name": "Шашлик з свинини",
+              "weight": "за 100г",
+              "price": "129₴",
+              "note": "(шашлик - мінімальне замовлення 200-240г за 1 шампур)"
+            }
+          },
+          {
+            "en": {
+              "name": "Veal shashlik",
+              "weight": "for 100g",
+              "price": "119₴"
+            },
+            "uk": {
+              "name": "Шашлик з телятини",
+              "weight": "за 100г",
+              "price": "139₴",
+              "note": "(шашлик - мінімальне замовлення 200-240г за 1 шампур)"
+            }
+          },
+          {
+            "en": {
+              "name": "Chicken shashlik",
+              "weight": "for 100g",
+              "price": "109₴"
+            },
+            "uk": {
+              "name": "Шашлик з курятини",
+              "weight": "за 100г",
+              "price": "129₴",
+              "note": "(шашлик - мінімальне замовлення 200-240г за 1 шампур)"
+            }
+          },
+          {
+            "en": {
+              "name": "Platter Khorceuli",
+              "description": "(shashlik of veal, pork, chicken, potatoes in the caucasus, slicing ​​vegetables, Georgian sauce)",
+              "price": "999₴"
+            },
+            "uk": {
+              "name": "Плато Хорцеулі",
+              "description": "(шашлик з телятини-300г,зі свинини-300г,з курятини-300г, картопля по-домашньому-250г,нарізка овочів-250г, соус,хліб)",
+              "price": "999₴"
+            }
+          },
+          {
+            "en": {
+              "name": "KEBAB-SET",
+              "description": "(2 lula-kebab of veal and lamb, potatoes in the caucasus, slicing ​​vegetables, Georgian sauce)",
+              "price": "599₴"
+            },
+            "uk": {
+              "name": "КЕБАБ-СЕТ",
+              "description": "(2 люля-кебаб з телятини і баранини по 160/220г, картопля по-грузинськи 250г, нарізка овочів, соус)",
+              "price": "699₴"
+            }
+          }
+        ]
+      },
+      "georgian_sauces": {
+        "title": {
+          "en": "Georgian Sauces",
+          "uk": "Грузинські соуси"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Adjika",
+              "weight": "50g",
+              "price": "39₴"
+            },
+            "uk": {
+              "name": "Аджика",
+              "weight": "50г",
+              "price": "39₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Tkemali",
+              "weight": "50g",
+              "price": "39₴"
+            },
+            "uk": {
+              "name": "Ткемалі",
+              "weight": "50г",
+              "price": "39₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Satsebeli",
+              "weight": "50g",
+              "price": "39₴"
+            },
+            "uk": {
+              "name": "Сацебелі",
+              "weight": "50г",
+              "price": "39₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Bage",
+              "weight": "50g",
+              "price": "45₴"
+            },
+            "uk": {
+              "name": "Баже",
+              "weight": "50г",
+              "price": "45₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Narsharab",
+              "weight": "50g",
+              "price": "45₴"
+            },
+            "uk": {
+              "name": "Наршараб",
+              "weight": "50г",
+              "price": "45₴"
+            }
+          }
+        ]
+      },
+      "coffee": {
+        "title": {
+          "en": "Coffee",
+          "uk": "Кава"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Turkish coffee",
+              "price": "45₴"
+            },
+            "uk": {
+              "name": "Кава по-турецьки",
+              "price": "45₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Americano",
+              "price": "55₴"
+            },
+            "uk": {
+              "name": "Американо",
+              "price": "55₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Espresso",
+              "price": "45₴"
+            },
+            "uk": {
+              "name": "Еспресо",
+              "price": "45₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Cappuccino",
+              "price": "75₴"
+            },
+            "uk": {
+              "name": "Капучіно",
+              "price": "75₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Latte",
+              "price": "80₴"
+            },
+            "uk": {
+              "name": "Лате",
+              "price": "80₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Americano with milk",
+              "price": "60₴"
+            },
+            "uk": {
+              "name": "Американо з молоком",
+              "price": "60₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Dopio",
+              "price": "65₴"
+            },
+            "uk": {
+              "name": "Допіо",
+              "price": "65₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Flat white",
+              "price": "80₴"
+            },
+            "uk": {
+              "name": "Флет-вайт",
+              "price": "80₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Americano with Baileys",
+              "price": "159₴"
+            },
+            "uk": {
+              "name": "Американо з Бейлісом",
+              "price": "159₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Cocoa",
+              "price": "60₴"
+            },
+            "uk": {
+              "name": "Какао",
+              "price": "60₴"
+            }
+          }
+        ]
+      },
+      "tea": {
+        "title": {
+          "en": "Tea",
+          "uk": "Чай"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Black",
+              "price": "49₴"
+            },
+            "uk": {
+              "name": "Чорний",
+              "price": "79₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Green",
+              "price": "49₴"
+            },
+            "uk": {
+              "name": "Зелений",
+              "price": "79₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Fruit",
+              "price": "59₴"
+            },
+            "uk": {
+              "name": "Фруктовий",
+              "price": "79₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Herbal",
+              "price": "59₴"
+            },
+            "uk": {
+              "name": "Трав’яний",
+              "price": "79₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Sea buckthorn tea with orange",
+              "price": "69₴"
+            },
+            "uk": {
+              "name": "Обліпиховий",
+              "price": "99₴"
+            }
+          }
+        ]
+      },
+      "desserts": {
+        "title": {
+          "en": "Desserts",
+          "uk": "Десерти"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Ice cream",
+              "description": "(with additives)",
+              "weight": "220g",
+              "price": "89₴"
+            },
+            "uk": {
+              "name": "Морозиво",
+              "description": "(з топінгом, з фруктами посезонно)",
+              "weight": "220г",
+              "price": "250₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Churchkhela",
+              "weight": "1 piece",
+              "price": "89₴"
+            },
+            "uk": {
+              "name": "Чурчхела",
+              "weight": "1 шт",
+              "price": "109₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Baklava",
+              "weight": "for 100g",
+              "price": "109₴"
+            },
+            "uk": {
+              "name": "Пахлава",
+              "weight": "за 100г",
+              "price": "119₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Cake of the day",
+              "weight": "150-200g",
+              "price": "159₴"
+            },
+            "uk": {
+              "name": "Торт дня",
+              "weight": "150-200г",
+              "price": "159₴"
+            }
+          }
+        ]
+      },
+      "beverages": {
+        "title": {
+          "en": "Beverages",
+          "uk": "Холодні напої"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Georgian lemonade",
+              "description": "(bottle)",
+              "weight": "500ml",
+              "price": "109₴"
+            },
+            "uk": {
+              "name": "Грузинський лимонад",
+              "description": "(пляшка)",
+              "weight": "500мл",
+              "price": "109₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Mojito n/a",
+              "weight": "500ml",
+              "price": "99₴"
+            },
+            "uk": {
+              "name": "Мохіто б/а",
+              "weight": "500мл",
+              "price": "99₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Juice",
+              "weight": "250ml",
+              "price": "39₴"
+            },
+            "uk": {
+              "name": "Сік",
+              "weight": "250мл",
+              "price": "69₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Kvass",
+              "weight": "500ml",
+              "price": "60₴"
+            },
+            "uk": {
+              "name": "Квас",
+              "weight": "300мл",
+              "price": "70₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Pepsi",
+              "description": "(bottle)",
+              "weight": "250ml",
+              "price": "49₴"
+            },
+            "uk": {
+              "name": "Пепсі",
+              "description": "(пляшка)",
+              "weight": "250мл",
+              "price": "69₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Borjomi",
+              "description": "(mineral water, bottle)",
+              "weight": "500ml",
+              "price": "109₴"
+            },
+            "uk": {
+              "name": "Боржомі",
+              "description": "(мінеральна вода, пляшка)",
+              "weight": "500мл",
+              "price": "139₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Carpathian source",
+              "description": "(non-carbonated water, bottle)",
+              "weight": "500ml",
+              "price": "49₴"
+            },
+            "uk": {
+              "name": "Карпатська джерельна",
+              "description": "(негазована вода, пляшка)",
+              "weight": "500мл",
+              "price": "69₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Stewed fruit",
+              "description": "(decanter)",
+              "weight": "500ml",
+              "price": "55₴"
+            },
+            "uk": {
+              "name": "Узвар",
+              "description": "(графін)",
+              "weight": "500мл",
+              "price": "85₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Nabeglavi",
+              "description": "(bottle)",
+              "weight": "500ml",
+              "price": "109₴"
+            },
+            "uk": {
+              "name": "Набеглаві",
+              "weight": "500мл",
+              "price": "139₴"
+            }
+          }
+        ]
+      },
+      "draft_beer": {
+        "title": {
+          "en": "Draft Beer",
+          "uk": "Розливне пиво"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Kronenbourg blanc",
+              "weight": "0.33/0.5",
+              "price": "75/89₴"
+            },
+            "uk": {
+              "name": "Kronenbourg blanche",
+              "weight": "0.33/0.5",
+              "price": "85/99₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Kronenbourg",
+              "description": "(dark)",
+              "weight": "0.33/0.5",
+              "price": "75/89₴"
+            },
+            "uk": {
+              "name": "Kronenbourg",
+              "description": "(темне)",
+              "weight": "0.33/0.5",
+              "price": "85/99₴"
+            }
+          }
+        ]
+      },
+      "bottled_beer": {
+        "title": {
+          "en": "Bottled Beer",
+          "uk": "Пляшкове пиво"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Hike Premium",
+              "description": "(bottle)",
+              "weight": "0.5",
+              "price": "79₴"
+            },
+            "uk": {
+              "name": "Hike Premium",
+              "description": "(пляшка)",
+              "weight": "0.5",
+              "price": "89₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Hike Blanche",
+              "description": "(bottle)",
+              "weight": "0.5",
+              "price": "79₴"
+            },
+            "uk": {
+              "name": "Hike Blanche",
+              "description": "(пляшка)",
+              "weight": "0.5",
+              "price": "89₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Senor Cartel",
+              "description": "(bottle)",
+              "weight": "0.33",
+              "price": "79₴"
+            },
+            "uk": {
+              "name": "Senor Cartel",
+              "description": "(пляшка)",
+              "weight": "0.33",
+              "price": "79₴"
+            }
+          }
+        ]
+      },
+      "chacha": {
+        "title": {
+          "en": "Chacha",
+          "uk": "Чача"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Chacha SAPERAVI",
+              "description": "40% (Georgia)",
+              "weight": "50g",
+              "price": "89₴"
+            },
+            "uk": {
+              "name": "Чача САПЕРАВІ",
+              "description": "40% (Грузія)",
+              "weight": "50г",
+              "price": "89₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Chacha RKATSYTELI",
+              "description": "40% (Georgia)",
+              "weight": "50g",
+              "price": "89₴"
+            },
+            "uk": {
+              "name": "Чача РКАЦИТЕЛІ",
+              "description": "40% (Грузія)",
+              "weight": "50г",
+              "price": "89₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Chacha-set",
+              "description": "of 6 species (Georgia)",
+              "weight": "300g",
+              "price": "350₴"
+            },
+            "uk": {
+              "name": "Чача-сет",
+              "description": "6 видів (Грузія)",
+              "weight": "300г",
+              "price": "350₴"
+            }
+          }
+        ]
+      },
+      "homemade_wine": {
+        "title": {
+          "en": "Homemade Wines",
+          "uk": "Домашнє вино"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "White dry",
+              "description": "11-14% (Georgia)",
+              "weight": "100g",
+              "price": "79₴"
+            },
+            "uk": {
+              "name": "Біле сухе",
+              "description": "11-14% (Грузія)",
+              "weight": "100г",
+              "price": "79₴"
+            }
+          },
+          {
+            "en": {
+              "name": "White semi sweet",
+              "description": "11-14% (Georgia)",
+              "weight": "100g",
+              "price": "79₴"
+            },
+            "uk": {
+              "name": "Біле н/сол",
+              "description": "11-14% (Грузія)",
+              "weight": "100г",
+              "price": "79₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Red dry",
+              "description": "11-14% (Georgia)",
+              "weight": "100g",
+              "price": "79₴"
+            },
+            "uk": {
+              "name": "Червоне сухе",
+              "description": "11-14% (Грузія)",
+              "weight": "100г",
+              "price": "79₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Red semi sweet",
+              "description": "11-14% (Georgia)",
+              "weight": "100g",
+              "price": "79₴"
+            },
+            "uk": {
+              "name": "Червоне н/сол",
+              "description": "11-14% (Грузія)",
+              "weight": "100г",
+              "price": "79₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Pomegranate wine",
+              "description": "(Georgia)",
+              "weight": "100g",
+              "price": "85₴"
+            },
+            "uk": {
+              "name": "ГРАНАТОВЕ ВИНО",
+              "description": "(Грузія)",
+              "weight": "100г",
+              "price": "85₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Mulled wine",
+              "weight": "250g",
+              "price": "85₴"
+            },
+            "uk": {
+              "name": "Глінтвейн",
+              "weight": "250г",
+              "price": "129₴"
+            }
+          }
+        ]
+      },
+      "vermouth": {
+        "title": {
+          "en": "Vermouth",
+          "uk": "Вермут"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Martini Bianco",
+              "description": "white 15% (Italy)",
+              "weight": "50g",
+              "price": "79₴"
+            },
+            "uk": {
+              "name": "Мартіні Б'янко",
+              "description": "біле 15% (Італія)",
+              "weight": "50г",
+              "price": "79₴"
+            }
+          }
+        ]
+      },
+      "vodka": {
+        "title": {
+          "en": "Vodka",
+          "uk": "Горілка"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Nemiroff",
+              "description": "40% (Ukraine)",
+              "weight": "50g",
+              "price": "59₴"
+            },
+            "uk": {
+              "name": "Особлива Неміров",
+              "description": "40% (Україна)",
+              "weight": "50г",
+              "price": "59₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Finlandia",
+              "description": "40% (Finland)",
+              "weight": "50g",
+              "price": "79₴"
+            },
+            "uk": {
+              "name": "Фінляндія",
+              "description": "40% (Фінляндія)",
+              "weight": "50г",
+              "price": "79₴"
+            }
+          }
+        ]
+      },
+      "whiskey": {
+        "title": {
+          "en": "Whiskey",
+          "uk": "Віскі"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Jameson",
+              "description": "40% (Ireland)",
+              "weight": "50g",
+              "price": "109₴"
+            },
+            "uk": {
+              "name": "Джемісон",
+              "description": "40% (Ірландія)",
+              "weight": "50г",
+              "price": "109₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Jack Daniels",
+              "description": "40% (USA)",
+              "weight": "50g",
+              "price": "109₴"
+            },
+            "uk": {
+              "name": "Джек Деніелс",
+              "description": "40% (США)",
+              "weight": "50г",
+              "price": "109₴"
+            }
+          }
+        ]
+      },
+      "liqueur": {
+        "title": {
+          "en": "Liqueur",
+          "uk": "Лікер"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Baileys",
+              "description": "17% (Ireland)",
+              "weight": "50g",
+              "price": "118₴"
+            },
+            "uk": {
+              "name": "Бейліс",
+              "description": "(17% Ірландія)",
+              "weight": "50г",
+              "price": "118₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Jagermeister",
+              "description": "35% (Germany)",
+              "weight": "50g",
+              "price": "89₴"
+            },
+            "uk": {
+              "name": "Егермайстер",
+              "description": "35% (Німеччина)",
+              "weight": "50г",
+              "price": "89₴"
+            }
+          }
+        ]
+      },
+      "gin": {
+        "title": {
+          "en": "Gin",
+          "uk": "Джин"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Gordons",
+              "description": "37,5% (London)",
+              "weight": "50g",
+              "price": "109₴"
+            },
+            "uk": {
+              "name": "Гордонс",
+              "description": "(37,5 % Великобританія)",
+              "weight": "50г",
+              "price": "109₴"
+            }
+          }
+        ]
+      },
+      "rum": {
+        "title": {
+          "en": "Rum",
+          "uk": "Ром"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Bacardi Carta Blanca",
+              "description": "40% (Germany)",
+              "weight": "50g",
+              "price": "99₴"
+            },
+            "uk": {
+              "name": "Бакарді Карта Бланка",
+              "description": "40% (Німеччина)",
+              "weight": "50г",
+              "price": "99₴"
+            }
+          }
+        ]
+      },
+      "tequila": {
+        "title": {
+          "en": "Tequila",
+          "uk": "Текіла"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Tres Ochos",
+              "description": "38% (Spain)",
+              "weight": "50g",
+              "price": "109₴"
+            },
+            "uk": {
+              "name": "Трес Очос",
+              "description": "38% (Іспанія)",
+              "weight": "50г",
+              "price": "109₴"
+            }
+          }
+        ]
+      },
+      "sparkling_wine": {
+        "title": {
+          "en": "Sparkling Wine «GALACTION»",
+          "uk": "Ігристе вино"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Sparkling wine white brute",
+              "description": "13% (Georgia)",
+              "weight": "bottle 0,75",
+              "price": "649₴"
+            },
+            "uk": {
+              "name": "Вино ігристе біле брют",
+              "description": "13% (Грузія)",
+              "weight": "пляшка 0,75",
+              "price": "649₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Sparkling wine white semi sweet",
+              "description": "12,5% (Georgia)",
+              "weight": "bottle 0,75",
+              "price": "649₴"
+            },
+            "uk": {
+              "name": "Вино ігристе біле н/сол",
+              "description": "12,5% (Грузія)",
+              "weight": "пляшка 0,75",
+              "price": "649₴"
+            }
+          }
+        ]
+      },
+      "white_wine": {
+        "title": {
+          "en": "White Wine",
+          "uk": "Біле вино"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Alazanskaya Dolina semi sweet",
+              "description": "11-14,5% (Georgia)",
+              "weight": "100g/bottle 0,75",
+              "price": "89/499₴"
+            },
+            "uk": {
+              "name": "Алазанська Долина н/сол",
+              "description": "11-14,5% (Грузія)",
+              "weight": "100г/пляшка 0,75",
+              "price": "99/690₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Tsinandali dry",
+              "description": "11-14,5% (Georgia)",
+              "weight": "100g/bottle 0,75",
+              "price": "99/599₴"
+            },
+            "uk": {
+              "name": "Цинандалі сухе",
+              "description": "11-14,5% (Грузія)",
+              "weight": "100г/пляшка 0,75",
+              "price": "109/760₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Tvishi semi sweet",
+              "description": "11-14,5% (Georgia)",
+              "weight": "100g/bottle 0,75",
+              "price": "109/729₴"
+            },
+            "uk": {
+              "name": "Твіші н/сол",
+              "description": "11-14,5% (Грузія)",
+              "weight": "100г/пляшка 0,75",
+              "price": "119/780₴"
+            }
+          }
+        ]
+      },
+      "red_wine": {
+        "title": {
+          "en": "Red Wine",
+          "uk": "Червоне вино"
+        },
+        "items": [
+          {
+            "en": {
+              "name": "Alazanskaya Dolina semi sweet",
+              "description": "11-14,5% (Georgia)",
+              "weight": "100g/bottle 0,75",
+              "price": "89/499₴"
+            },
+            "uk": {
+              "name": "Алазанська Долина н/сол",
+              "weight": "100г/пляшка 0,75",
+              "price": "99₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Saperavi dry",
+              "description": "11-14,5% (Georgia)",
+              "weight": "100g/bottle 0,75",
+              "price": "99/599₴"
+            },
+            "uk": {
+              "name": "Сапераві сухе",
+              "description": "11-14,5% (Грузія)",
+              "weight": "100г/пляшка 0,75",
+              "price": "109/760₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Mukuzani dry",
+              "description": "13,5% (Georgia)",
+              "weight": "100g/bottle 0,75",
+              "price": "109/729₴"
+            },
+            "uk": {
+              "name": "Мукузані сухе",
+              "description": "13,5% (Грузія)",
+              "weight": "100г/пляшка 0,75",
+              "price": "119/780₴"
+            }
+          },
+          {
+            "en": {
+              "name": "Kindzmarauli semi sweet",
+              "description": "11% (Georgia)",
+              "weight": "100g/bottle 0,75",
+              "price": "109/729₴"
+            },
+            "uk": {
+              "name": "Кіндзмараулі н/сол",
+              "description": "11% (Грузія)",
+              "weight": "100г/пляшка 0,75",
+              "price": "119/780₴"
+            }
+          }
+        ]
+      }
+    }
+  }
