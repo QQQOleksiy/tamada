@@ -54,13 +54,17 @@ function App() {
         },
         body: JSON.stringify(dataToSend),
       });
+      
+      const result = await response.json();
+      
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error(result.error || 'Network response was not ok');
       }
+      
       alert('Меню успішно збережено!');
     } catch (error) {
       console.error('Error saving menu:', error);
-      alert('Помилка при збереженні меню.');
+      alert('Помилка при збереженні меню: ' + error.message);
     }
   };
 

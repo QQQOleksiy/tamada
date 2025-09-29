@@ -16,25 +16,31 @@ const MenuItem = ({
     const file = e.target.files[0];
     if (!file) return;
 
-    const formData = new FormData();
-    formData.append('image', file);
+    // Конвертуємо файл в base64 для Cloudinary
+    const reader = new FileReader();
+    reader.onload = async (event) => {
+      try {
+        const response = await fetch('/api/upload-image', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ image: event.target.result }),
+        });
 
-    try {
-      const response = await fetch('/api/upload-image', {
-        method: 'POST',
-        body: formData,
-      });
+        if (!response.ok) {
+          throw new Error('Image upload failed');
+        }
 
-      if (!response.ok) {
-        throw new Error('Image upload failed');
+        const data = await response.json();
+        onChange?.('image', data.filePath);
+      } catch (error) {
+        console.error('Error uploading image:', error);
+        alert('Помилка завантаження зображення: ' + error.message);
       }
-
-      const data = await response.json();
-      onChange?.('image', data.filePath);
-    } catch (error) {
-      console.error('Error uploading image:', error);
-      alert('Помилка завантаження зображення.');
-    }
+    };
+    
+    reader.readAsDataURL(file);
   };
 
   return (
