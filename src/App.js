@@ -20,18 +20,25 @@ function App() {
   useEffect(() => {
     const loadMenu = async () => {
       try {
-        const res = await fetch("/data/tm-menu.json");
+        const res = await fetch("/api/load-menu");
         const json = await res.json();
-        let menuData = json?.menu || {};
+        
+        if (!json.success) {
+          throw new Error(json.error || 'Failed to load menu');
+        }
+        
+        let menuData = json.menu || {};
         // Додаткова перевірка, щоб виправити можливу помилку вкладеності
         if (menuData.menu) {
           menuData = menuData.menu;
         }
+        
         setMenu(menuData);
         const keys = Object.keys(menuData);
         if (keys.length) setActiveSection(keys[0]);
       } catch (e) {
-        setError("Не вдалося завантажити меню");
+        console.error('Error loading menu:', e);
+        setError("Не вдалося завантажити меню: " + e.message);
       } finally {
         setLoading(false);
       }

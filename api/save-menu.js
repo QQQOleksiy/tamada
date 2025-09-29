@@ -1,4 +1,13 @@
-export default function handler(req, res) {
+import { v2 as cloudinary } from 'cloudinary';
+
+// Налаштування Cloudinary
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
+
+export default async function handler(req, res) {
   // Дозволяємо тільки POST запити
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -7,15 +16,24 @@ export default function handler(req, res) {
   try {
     const menuData = req.body;
     
-    // Тут ми будемо зберігати меню в файлі
-    // Для Vercel це буде тимчасове сховище
-    // В реальному проєкті краще використовувати базу даних
+    // Конвертуємо меню в JSON рядок
+    const menuJson = JSON.stringify(menuData, null, 2);
     
-    // Поки що просто повертаємо успіх
+    // Завантажуємо JSON файл в Cloudinary
+    const result = await cloudinary.uploader.upload(
+      `data:application/json;base64,${Buffer.from(menuJson).toString('base64')}`,
+      {
+        folder: 'tamada-menu',
+        resource_type: 'raw',
+        public_id: 'menu-data',
+        overwrite: true, // Перезаписуємо існуючий файл
+      }
+    );
+
     res.status(200).json({ 
       success: true, 
       message: 'Menu data saved successfully',
-      data: menuData 
+      url: result.secure_url
     });
     
   } catch (error) {
