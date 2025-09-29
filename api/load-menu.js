@@ -46,12 +46,16 @@ export default async function handler(req, res) {
 
       console.log('Cloudinary result:', result);
 
-      if (!result || !result.bytes) {
+      if (!result || !result.secure_url) {
         throw new Error('Invalid response from Cloudinary');
       }
 
-      // Конвертуємо base64 в JSON
-      const menuData = JSON.parse(Buffer.from(result.bytes, 'base64').toString());
+      // Завантажуємо вміст файлу за URL
+      const menuResponse = await fetch(result.secure_url);
+      if (!menuResponse.ok) {
+        throw new Error(`Failed to fetch menu content: ${menuResponse.statusText}`);
+      }
+      const menuData = await menuResponse.json();
       
       res.status(200).json({ 
         success: true,
