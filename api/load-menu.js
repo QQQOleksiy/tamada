@@ -13,12 +13,42 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
+  // Перевіряємо Environment Variables
+  const cloudName = process.env.CLOUDINARY_CLOUD_NAME;
+  const apiKey = process.env.CLOUDINARY_API_KEY;
+  const apiSecret = process.env.CLOUDINARY_API_SECRET;
+
+  console.log('Environment check:', {
+    cloudName: cloudName ? 'SET' : 'NOT SET',
+    apiKey: apiKey ? 'SET' : 'NOT SET',
+    apiSecret: apiSecret ? 'SET' : 'NOT SET'
+  });
+
+  if (!cloudName || !apiKey || !apiSecret) {
+    console.error('Missing Cloudinary environment variables');
+    return res.status(500).json({ 
+      error: 'Cloudinary configuration missing',
+      details: {
+        cloudName: !!cloudName,
+        apiKey: !!apiKey,
+        apiSecret: !!apiSecret
+      }
+    });
+  }
+
   try {
     // Спочатку спробуємо завантажити меню з Cloudinary
     try {
+      console.log('Attempting to load menu from Cloudinary...');
       const result = await cloudinary.api.resource('tamada-menu/menu-data', {
         resource_type: 'raw'
       });
+
+      console.log('Cloudinary result:', result);
+
+      if (!result || !result.bytes) {
+        throw new Error('Invalid response from Cloudinary');
+      }
 
       // Конвертуємо base64 в JSON
       const menuData = JSON.parse(Buffer.from(result.bytes, 'base64').toString());
@@ -30,6 +60,8 @@ export default async function handler(req, res) {
       });
       return;
     } catch (cloudinaryError) {
+      console.log('Cloudinary error:', cloudinaryError);
+      
       // Якщо файл не знайдено в Cloudinary, повертаємо порожнє меню
       if (cloudinaryError.http_code === 404) {
         console.log('Menu not found in Cloudinary, returning empty menu');
@@ -47,6 +79,9 @@ export default async function handler(req, res) {
     
   } catch (error) {
     console.error('Error loading menu:', error);
-    res.status(500).json({ error: 'Error loading menu data: ' + error.message });
+    res.status(500).json({ 
+      error: 'Error loading menu data: ' + (error.message || 'Unknown error'),
+      details: error
+    });
   }
 }
