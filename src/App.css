@@ -9,16 +9,19 @@ body {
   background-color: #fafafa;
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .App {
   min-height: 100vh;
+  position: relative;
 }
 
 .container {
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
+  padding-top: 200px;
 }
 
 .section {
@@ -204,6 +207,7 @@ body {
 @media (max-width: 480px) {
   .container {
     padding: 15px;
+    padding-top: 220px;
   }
 
   .section-title {

@@ -4,6 +4,7 @@
   "private": true,
   "description": "Georgian restaurant menu web app",
   "main": "index.js",
+  "proxy": "https://tamada-qz4k.vercel.app",
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scripts build",

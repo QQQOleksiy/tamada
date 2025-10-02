@@ -8,19 +8,22 @@ import AdminAuth from "./components/admin/AdminAuth";
 import AdminBar from "./components/admin/AdminBar";
 
 function App() {
+  const API_BASE = process.env.REACT_APP_API_BASE || '';
   const [activeSection, setActiveSection] = useState("side_dishes");
   const [language, setLanguage] = useState("uk");
   const [menu, setMenu] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [isAdmin, setIsAdmin] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
     const loadMenu = async () => {
       try {
-        const res = await fetch("/api/load-menu");
+        const res = await fetch(`${API_BASE}/api/load-menu`);
         const json = await res.json();
         
         if (!json.success) {
@@ -54,7 +57,7 @@ function App() {
     try {
       // Перевіряємо, чи не обгорнуте меню в зайвий об'єкт "menu"
       const dataToSend = menu.menu ? menu.menu : menu;
-      const response = await fetch('/api/save-menu', {
+      const response = await fetch(`${API_BASE}/api/save-menu`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -113,6 +116,19 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Handle header visibility
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down and past 100px
+        setIsHeaderVisible(false);
+      } else {
+        // Scrolling up or at top
+        setIsHeaderVisible(true);
+      }
+      setLastScrollY(currentScrollY);
+
+      // Handle section detection
       const sections = document.querySelectorAll(".section");
       let currentSection = "";
       let minDistance = Infinity;
@@ -149,11 +165,11 @@ function App() {
         clearTimeout(scrollTimeout);
       }
     };
-  }, []);
+  }, [lastScrollY]);
 
   return (
     <div className="App">
-      <Header />
+      <Header isVisible={isHeaderVisible} />
       <Routes>
         <Route
           path="/"
@@ -166,6 +182,7 @@ function App() {
                   onSectionChange={handleSectionChange}
                   language={language}
                   onLanguageChange={handleLanguageChange}
+                  isHeaderVisible={isHeaderVisible}
                 />
               )}
               <div className="container">
@@ -198,6 +215,7 @@ function App() {
                     onSectionChange={handleSectionChange}
                     language={language}
                     onLanguageChange={handleLanguageChange}
+                    isHeaderVisible={isHeaderVisible}
                   />
                 )}
                 <AdminBar onLogout={handleAdminLogout} onSave={handleMenuSave} />
