@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import MenuSection from "./components/MenuSection";
+import HomeScreen from "./components/HomeScreen";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import AdminAuth from "./components/admin/AdminAuth";
 import AdminBar from "./components/admin/AdminBar";
@@ -15,8 +16,6 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [isAdmin, setIsAdmin] = useState(false);
-  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -38,7 +37,9 @@ function App() {
         
         setMenu(menuData);
         const keys = Object.keys(menuData);
-        if (keys.length) setActiveSection(keys[0]);
+        if (keys.length) {
+          setActiveSection(keys[0]);
+        }
       } catch (e) {
         console.error('Error loading menu:', e);
         setError("Не вдалося завантажити меню: " + e.message);
@@ -89,7 +90,12 @@ function App() {
     setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      // Враховуємо висоту Header + Navigation (приблизно 200px)
+      const offsetTop = element.offsetTop - 200;
+      window.scrollTo({
+        top: Math.max(0, offsetTop),
+        behavior: "smooth"
+      });
     }
   };
 
@@ -114,38 +120,30 @@ function App() {
     navigate("/");
   };
 
+  const handleGoToMenu = () => {
+    navigate("/menu");
+  };
+
+  // Автоматичне визначення активного розділу при скролі
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      
-      // Handle header visibility
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        // Scrolling down and past 100px
-        setIsHeaderVisible(false);
-      } else {
-        // Scrolling up or at top
-        setIsHeaderVisible(true);
-      }
-      setLastScrollY(currentScrollY);
-
-      // Handle section detection
       const sections = document.querySelectorAll(".section");
       let currentSection = "";
       let minDistance = Infinity;
 
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
-        const distance = Math.abs(rect.top - 120);
+        const distance = Math.abs(rect.top - 100); // 100px від верху для урахування Header + Navigation
 
-        if (rect.top <= 120 && rect.bottom >= 120) {
+        if (rect.top <= 100 && rect.bottom >= 100) {
           currentSection = section.id;
-        } else if (distance < minDistance && rect.top <= 120) {
+        } else if (distance < minDistance && rect.top <= 100) {
           minDistance = distance;
           currentSection = section.id;
         }
       });
 
-      if (currentSection) {
+      if (currentSection && currentSection !== activeSection) {
         setActiveSection(currentSection);
       }
     };
@@ -165,16 +163,26 @@ function App() {
         clearTimeout(scrollTimeout);
       }
     };
-  }, [lastScrollY]);
+  }, [activeSection]);
 
   return (
     <div className="App">
-      <Header isVisible={isHeaderVisible} />
       <Routes>
         <Route
           path="/"
           element={
+            <HomeScreen
+              language={language}
+              onLanguageChange={handleLanguageChange}
+              onGoToMenu={handleGoToMenu}
+            />
+          }
+        />
+        <Route
+          path="/menu"
+          element={
             <>
+              <Header />
               {!loading && !error && (
                 <Navigation
                   sections={sections}
@@ -182,7 +190,6 @@ function App() {
                   onSectionChange={handleSectionChange}
                   language={language}
                   onLanguageChange={handleLanguageChange}
-                  isHeaderVisible={isHeaderVisible}
                 />
               )}
               <div className="container">
@@ -208,15 +215,15 @@ function App() {
           element={
             isAdmin ? (
               <>
+                <Header />
                 {!loading && !error && (
-                  <Navigation
-                    sections={sections}
-                    activeSection={activeSection}
-                    onSectionChange={handleSectionChange}
-                    language={language}
-                    onLanguageChange={handleLanguageChange}
-                    isHeaderVisible={isHeaderVisible}
-                  />
+                <Navigation
+                  sections={sections}
+                  activeSection={activeSection}
+                  onSectionChange={handleSectionChange}
+                  language={language}
+                  onLanguageChange={handleLanguageChange}
+                />
                 )}
                 <AdminBar onLogout={handleAdminLogout} onSave={handleMenuSave} />
                 <div className="container">

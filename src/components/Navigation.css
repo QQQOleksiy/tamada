@@ -1,21 +1,15 @@
 .nav {
-  background: white;
+  background: rgba(26, 26, 26, 0.9);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   padding: 15px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
+  z-index: 50;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  transition: transform 0.3s ease;
   overflow: hidden;
-}
-
-.nav.with-header {
-  top: 160px;
 }
 
 .nav-scroll {
@@ -35,28 +29,29 @@
 }
 
 .nav-item {
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 8px 16px;
   text-decoration: none;
-  color: #666666;
+  color: #e0e0e0;
   font-weight: 400;
   font-size: 14px;
   white-space: nowrap;
   transition: all 0.2s ease;
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   flex-shrink: 0;
-  border: none;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .nav-item:hover {
-  background: #f8f9fa;
-  border-color: #ff7718;
+  background: rgba(255, 119, 24, 0.2);
+  border-color: rgba(255, 119, 24, 0.4);
   color: #ff7718;
   transform: translateY(-1px);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 6px rgba(255, 119, 24, 0.3);
 }
 
 .nav-item.active {
@@ -64,7 +59,9 @@
   color: white;
   border-color: #ff7718;
   font-weight: 500;
-  box-shadow: 0 2px 8px rgba(139, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(255, 119, 24, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 
@@ -73,10 +70,6 @@
     padding: 10px 0;
     flex-direction: row;
     gap: 0;
-  }
-
-  .nav.with-header {
-    top: 140px;
   }
 
   .nav-scroll {

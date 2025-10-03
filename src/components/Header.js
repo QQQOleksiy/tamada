@@ -1,11 +1,11 @@
 import React from "react";
 import "./Header.css";
 
-const Header = ({ isVisible }) => {
+const Header = () => {
   return (
-    <div className={`header ${!isVisible ? 'header-hidden' : ''}`}>
+    <div className="header">
       <img
-        src="/header.png"
+        src="/logo.svg"
         alt="ТАМАДА Грузинський ресторан"
         className="header-logo"
       />

@@ -12,6 +12,25 @@ const MenuItem = ({
 }) => {
   const isLongDescription = item.description && item.description.length > 100;
 
+  const handleInputFocus = (e) => {
+    // Якщо поле містить placeholder текст, очищаємо його при фокусі
+    const placeholderTexts = {
+      name: "Нова страва",
+      description: "Опис...",
+      price: "0",
+      weight: "0",
+      note: "Нотатки..."
+    };
+    
+    const fieldType = e.target.className.split(' ')[0].replace('item-', '');
+    const placeholder = placeholderTexts[fieldType];
+    
+    if (placeholder && e.target.value === placeholder) {
+      e.target.value = "";
+      onChange?.(fieldType, "");
+    }
+  };
+
   const handleImageUpload = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
@@ -52,7 +71,14 @@ const MenuItem = ({
               className="item-name"
               value={item.name || ""}
               onChange={(e) => onChange?.("name", e.target.value)}
-              style={{ border: "1px solid #ddd", borderRadius: 6, padding: 6 }}
+              onFocus={handleInputFocus}
+              style={{ 
+                border: "1px solid #ddd", 
+                borderRadius: 6, 
+                padding: 6,
+                color: "#333",
+                backgroundColor: "#fff"
+              }}
             />
           ) : (
             <div className="item-name">{item.name}</div>
@@ -72,17 +98,20 @@ const MenuItem = ({
                       onChange?.("price", parseInt(value, 10).toString());
                     }
                   }}
+                  onFocus={handleInputFocus}
                   style={{
                     border: "1px solid #ddd",
                     borderRadius: "6px 0 0 6px",
                     padding: 6,
                     width: '80px',
+                    color: "#333",
+                    backgroundColor: "#fff"
                   }}
                 />
                 <span className="static-symbol">₴</span>
               </>
             ) : (
-              item.price && <div className="item-price">{item.price} ₴</div>
+              item.price && <div className="item-price">{item.price}</div>
             )}
           </div>
         </div>
@@ -92,8 +121,15 @@ const MenuItem = ({
             className="item-description"
             value={item.description || ""}
             onChange={(e) => onChange?.("description", e.target.value)}
+            onFocus={handleInputFocus}
             rows={3}
-            style={{ border: "1px solid #ddd", borderRadius: 6, padding: 6 }}
+            style={{ 
+              border: "1px solid #ddd", 
+              borderRadius: 6, 
+              padding: 6,
+              color: "#333",
+              backgroundColor: "#fff"
+            }}
           />
         ) : (
           item.description && (
@@ -132,11 +168,14 @@ const MenuItem = ({
                       );
                     }
                   }}
+                  onFocus={handleInputFocus}
                   style={{
                     border: "1px solid #ddd",
                     borderRadius: "6px 0 0 6px",
                     padding: 4,
                     width: '60px',
+                    color: "#333",
+                    backgroundColor: "#fff"
                   }}
                 />
                 <span className="static-symbol">г</span>
@@ -150,10 +189,13 @@ const MenuItem = ({
               className="item-note"
               value={item.note || ""}
               onChange={(e) => onChange?.("note", e.target.value)}
+              onFocus={handleInputFocus}
               style={{
                 border: "1px solid #ffd6d6",
                 borderRadius: 6,
                 padding: 4,
+                color: "#333",
+                backgroundColor: "#fff"
               }}
             />
           ) : (

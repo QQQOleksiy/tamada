@@ -7,7 +7,6 @@ const Navigation = ({
   onSectionChange,
   language,
   onLanguageChange,
-  isHeaderVisible,
 }) => {
   const navScrollRef = useRef(null);
 
@@ -33,7 +32,7 @@ const Navigation = ({
   }, [activeSection]);
 
   return (
-    <nav className={`nav ${isHeaderVisible ? 'with-header' : ''}`}>
+    <nav className="nav">
       <div className="nav-scroll" ref={navScrollRef}>
         {sections.map((s) => (
           <button
