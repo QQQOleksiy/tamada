@@ -60,17 +60,17 @@ const MenuSection = ({
 
   const handleAddItem = () => {
     const newItem = {
-      name: "Нова страва",
-      description: "Опис...",
-      price: "0",
-      weight: "0г",
+      name: "",
+      description: "",
+      price: "",
+      weight: "",
       uk: {
-        name: "Нова страва",
-        description: "Опис...",
+        name: "",
+        description: "",
       },
       en: {
-        name: "New Dish",
-        description: "Description...",
+        name: "",
+        description: "",
       },
     };
 
@@ -138,13 +138,26 @@ const MenuSection = ({
           style={{
             display: 'block',
             margin: '20px auto',
-            padding: '10px 20px',
+            padding: '12px 24px',
             background: '#4CAF50',
             color: 'white',
             border: 'none',
-            borderRadius: '5px',
+            borderRadius: '8px',
             cursor: 'pointer',
             fontSize: '16px',
+            fontWeight: '500',
+            boxShadow: '0 2px 8px rgba(76, 175, 80, 0.3)',
+            transition: 'all 0.2s ease',
+            width: '100%',
+            maxWidth: '300px'
+          }}
+          onMouseOver={(e) => {
+            e.target.style.background = '#45a049';
+            e.target.style.transform = 'translateY(-1px)';
+          }}
+          onMouseOut={(e) => {
+            e.target.style.background = '#4CAF50';
+            e.target.style.transform = 'translateY(0)';
           }}
         >
           + Додати страву

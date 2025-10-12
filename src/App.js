@@ -11,7 +11,9 @@ import AdminBar from "./components/admin/AdminBar";
 function App() {
   const API_BASE = process.env.REACT_APP_API_BASE || '';
   const [activeSection, setActiveSection] = useState("side_dishes");
-  const [language, setLanguage] = useState("uk");
+  const [language, setLanguage] = useState(() => {
+    return localStorage.getItem("tm_language") || "uk";
+  });
   const [menu, setMenu] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -101,6 +103,7 @@ function App() {
 
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
+    localStorage.setItem("tm_language", lang);
   };
 
   useEffect(() => {

@@ -222,14 +222,19 @@ body {
 }
 
 .static-symbol {
-  padding: 6px;
-  background-color: #f0f0f0;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
   border: 1px solid #ddd;
   border-left: none;
   border-radius: 0 6px 6px 0;
   height: 100%;
   display: flex;
   align-items: center;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  min-width: 32px;
+  justify-content: center;
 }
 
 @media (max-width: 480px) {
@@ -240,24 +245,24 @@ body {
   }
   
   .container {
-    padding: 15px;
+    padding: 10px;
   }
 
   .section-title {
-    font-size: 20px;
+    font-size: 18px;
     color: #ff7718;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   .menu-item {
-    padding: 15px;
+    padding: 12px;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
   }
 
   .menu-image {
     width: 100%;
-    height: 200px;
+    height: 180px;
     align-self: center;
   }
 
@@ -267,5 +272,103 @@ body {
 
   .item-price {
     font-size: 16px;
+  }
+
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .item-price-wrapper {
+    align-self: flex-end;
+  }
+
+  .item-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .item-weight-wrapper {
+    align-self: flex-start;
+  }
+
+  /* Стили для полей ввода в админке */
+  .item-name input,
+  .item-description textarea,
+  .item-price input,
+  .item-weight input,
+  .item-note input {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    font-size: 16px; /* Предотвращает зум на iOS */
+  }
+
+  .item-description textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+
+  .static-symbol {
+    padding: 8px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    min-width: 28px;
+  }
+
+  /* Дополнительные стили для админ панели */
+  .menu-image {
+    position: relative;
+  }
+
+  /* Улучшенные стили для полей ввода */
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 6px;
+  }
+
+  /* Стили для кнопок в админке */
+  button {
+    min-height: 44px; /* Минимальная высота для touch targets */
+    touch-action: manipulation;
+  }
+
+  /* Улучшенные стили для навигации */
+  .nav-item {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Дополнительные стили для очень маленьких экранов */
+@media (max-width: 360px) {
+  .container {
+    padding: 8px;
+  }
+
+  .menu-item {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .item-name {
+    font-size: 15px;
+  }
+
+  .item-price {
+    font-size: 15px;
   }
 }

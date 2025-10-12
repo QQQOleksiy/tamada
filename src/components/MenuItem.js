@@ -15,8 +15,8 @@ const MenuItem = ({
   const handleInputFocus = (e) => {
     // Якщо поле містить placeholder текст, очищаємо його при фокусі
     const placeholderTexts = {
-      name: "Нова страва",
-      description: "Опис...",
+      name: "Назва страви",
+      description: "Опис страви...",
       price: "0",
       weight: "0",
       note: "Нотатки..."
@@ -72,12 +72,16 @@ const MenuItem = ({
               value={item.name || ""}
               onChange={(e) => onChange?.("name", e.target.value)}
               onFocus={handleInputFocus}
+              placeholder="Назва страви"
               style={{ 
                 border: "1px solid #ddd", 
                 borderRadius: 6, 
-                padding: 6,
+                padding: "8px 12px",
                 color: "#333",
-                backgroundColor: "#fff"
+                backgroundColor: "#fff",
+                fontSize: "16px",
+                width: "100%",
+                boxSizing: "border-box"
               }}
             />
           ) : (
@@ -89,29 +93,36 @@ const MenuItem = ({
                 <input
                   type="number"
                   className="item-price"
-                  value={item.price || ""}
+                  value={(item.price || "").replace(/₴/g, "")}
                   onChange={(e) => {
                     const value = e.target.value.replace(/[^0-9]/g, "");
                     if (value === "") {
                       onChange?.("price", "");
                     } else {
-                      onChange?.("price", parseInt(value, 10).toString());
+                      onChange?.("price", parseInt(value, 10).toString() + "₴");
                     }
                   }}
                   onFocus={handleInputFocus}
+                  placeholder="0"
                   style={{
                     border: "1px solid #ddd",
                     borderRadius: "6px 0 0 6px",
-                    padding: 6,
-                    width: '80px',
+                    padding: "8px 12px",
+                    width: '100px',
                     color: "#333",
-                    backgroundColor: "#fff"
+                    backgroundColor: "#fff",
+                    fontSize: "16px",
+                    boxSizing: "border-box"
                   }}
                 />
                 <span className="static-symbol">₴</span>
               </>
             ) : (
-              item.price && <div className="item-price">{item.price}</div>
+              item.price && (
+                <div className="item-price">
+                  {item.price.includes('₴') ? item.price : item.price + '₴'}
+                </div>
+              )
             )}
           </div>
         </div>
@@ -122,13 +133,19 @@ const MenuItem = ({
             value={item.description || ""}
             onChange={(e) => onChange?.("description", e.target.value)}
             onFocus={handleInputFocus}
-            rows={3}
+            placeholder="Опис страви..."
+            rows={4}
             style={{ 
               border: "1px solid #ddd", 
               borderRadius: 6, 
-              padding: 6,
+              padding: "8px 12px",
               color: "#333",
-              backgroundColor: "#fff"
+              backgroundColor: "#fff",
+              fontSize: "16px",
+              width: "100%",
+              boxSizing: "border-box",
+              resize: "vertical",
+              minHeight: "80px"
             }}
           />
         ) : (
@@ -169,19 +186,26 @@ const MenuItem = ({
                     }
                   }}
                   onFocus={handleInputFocus}
+                  placeholder="0"
                   style={{
                     border: "1px solid #ddd",
                     borderRadius: "6px 0 0 6px",
-                    padding: 4,
-                    width: '60px',
+                    padding: "6px 8px",
+                    width: '80px',
                     color: "#333",
-                    backgroundColor: "#fff"
+                    backgroundColor: "#fff",
+                    fontSize: "16px",
+                    boxSizing: "border-box"
                   }}
                 />
                 <span className="static-symbol">г</span>
               </>
             ) : (
-              item.weight && <span className="item-weight">{item.weight}</span>
+              item.weight && (
+                <span className="item-weight">
+                  {item.weight.includes('г') ? item.weight : item.weight + 'г'}
+                </span>
+              )
             )}
           </div>
           {editable ? (
@@ -190,12 +214,17 @@ const MenuItem = ({
               value={item.note || ""}
               onChange={(e) => onChange?.("note", e.target.value)}
               onFocus={handleInputFocus}
+              placeholder="Нотатки..."
               style={{
                 border: "1px solid #ffd6d6",
                 borderRadius: 6,
-                padding: 4,
+                padding: "6px 8px",
                 color: "#333",
-                backgroundColor: "#fff"
+                backgroundColor: "#fff",
+                fontSize: "14px",
+                width: "100%",
+                boxSizing: "border-box",
+                maxWidth: "200px"
               }}
             />
           ) : (
@@ -223,18 +252,29 @@ const MenuItem = ({
             onClick={onDelete}
             style={{
               position: 'absolute',
-              top: '5px',
-              right: '5px',
+              top: '8px',
+              right: '8px',
               background: '#ff4d4d',
               color: 'white',
               border: 'none',
               borderRadius: '50%',
-              width: '24px',
-              height: '24px',
+              width: '28px',
+              height: '28px',
               cursor: 'pointer',
-              fontSize: '16px',
-              lineHeight: '24px',
+              fontSize: '18px',
+              lineHeight: '28px',
               textAlign: 'center',
+              boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+              zIndex: 10,
+              transition: 'all 0.2s ease'
+            }}
+            onMouseOver={(e) => {
+              e.target.style.background = '#e63939';
+              e.target.style.transform = 'scale(1.1)';
+            }}
+            onMouseOut={(e) => {
+              e.target.style.background = '#ff4d4d';
+              e.target.style.transform = 'scale(1)';
             }}
           >
             &times;
