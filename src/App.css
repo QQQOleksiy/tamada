@@ -294,7 +294,6 @@ body {
     align-self: flex-start;
   }
 
-  /* Стили для полей ввода в админке */
   .item-name input,
   .item-description textarea,
   .item-price input,
@@ -303,7 +302,7 @@ body {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box;
-    font-size: 16px; /* Предотвращает зум на iOS */
+    font-size: 16px;
   }
 
   .item-description textarea {
@@ -319,12 +318,10 @@ body {
     min-width: 28px;
   }
 
-  /* Дополнительные стили для админ панели */
   .menu-image {
     position: relative;
   }
 
-  /* Улучшенные стили для полей ввода */
   input[type="text"],
   input[type="number"],
   textarea {
@@ -334,13 +331,11 @@ body {
     border-radius: 6px;
   }
 
-  /* Стили для кнопок в админке */
   button {
-    min-height: 44px; /* Минимальная высота для touch targets */
+    min-height: 44px;
     touch-action: manipulation;
   }
 
-  /* Улучшенные стили для навигации */
   .nav-item {
     min-height: 44px;
     display: flex;
@@ -349,7 +344,6 @@ body {
   }
 }
 
-/* Дополнительные стили для очень маленьких экранов */
 @media (max-width: 360px) {
   .container {
     padding: 8px;
