@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import MenuSection from "./components/MenuSection";
 import HomeScreen from "./components/HomeScreen";
+import FloatingLanguageButton from "./components/FloatingLanguageButton";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import AdminAuth from "./components/admin/AdminAuth";
 import AdminBar from "./components/admin/AdminBar";
@@ -168,8 +169,16 @@ function App() {
     };
   }, [activeSection]);
 
+  const showFloatingButton = location.pathname === "/" || location.pathname === "/menu";
+
   return (
     <div className="App">
+      {showFloatingButton && (
+        <FloatingLanguageButton
+          language={language}
+          onLanguageChange={handleLanguageChange}
+        />
+      )}
       <Routes>
         <Route
           path="/"
@@ -228,7 +237,12 @@ function App() {
                   onLanguageChange={handleLanguageChange}
                 />
                 )}
-                <AdminBar onLogout={handleAdminLogout} onSave={handleMenuSave} />
+                <AdminBar 
+                  onLogout={handleAdminLogout} 
+                  onSave={handleMenuSave}
+                  language={language}
+                  onLanguageChange={handleLanguageChange}
+                />
                 <div className="container">
                   {loading && <div>Завантаження...</div>}
                   {error && <div>{error}</div>}

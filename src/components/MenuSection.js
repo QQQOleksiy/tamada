@@ -29,19 +29,38 @@ const MenuSection = ({
     const updatedItems = [...section.items];
     const itemToUpdate = { ...updatedItems[idx] };
 
-    const languageSpecificFields = ["name", "description"];
-
-    if (languageSpecificFields.includes(field)) {
-      // Оновлюємо поле для поточної мови
-      const langKey = language === "en" ? "en" : "uk";
-      if (!itemToUpdate[langKey]) {
-        itemToUpdate[langKey] = {};
+    if (field === "name_uk") {
+      if (!itemToUpdate.uk) {
+        itemToUpdate.uk = {};
       }
-      itemToUpdate[langKey][field] = value;
+      itemToUpdate.uk.name = value;
+    } else if (field === "name_en") {
+      if (!itemToUpdate.en) {
+        itemToUpdate.en = {};
+      }
+      itemToUpdate.en.name = value;
+    } else if (field === "description_uk") {
+      if (!itemToUpdate.uk) {
+        itemToUpdate.uk = {};
+      }
+      itemToUpdate.uk.description = value;
+    } else if (field === "description_en") {
+      if (!itemToUpdate.en) {
+        itemToUpdate.en = {};
+      }
+      itemToUpdate.en.description = value;
+    } else if (field === "note_uk") {
+      if (!itemToUpdate.uk) {
+        itemToUpdate.uk = {};
+      }
+      itemToUpdate.uk.note = value;
+    } else if (field === "note_en") {
+      if (!itemToUpdate.en) {
+        itemToUpdate.en = {};
+      }
+      itemToUpdate.en.note = value;
     } else {
-      // Оновлюємо спільне поле (ціна, вага, зображення)
       itemToUpdate[field] = value;
-      // Видаляємо це поле з мовних версій, якщо воно там було
       if (itemToUpdate.uk) delete itemToUpdate.uk[field];
       if (itemToUpdate.en) delete itemToUpdate.en[field];
     }

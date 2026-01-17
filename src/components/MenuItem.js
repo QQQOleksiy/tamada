@@ -62,28 +62,54 @@ const MenuItem = ({
     reader.readAsDataURL(file);
   };
 
+  const getItemValue = (lang, field) => {
+    if (item[lang] && item[lang][field] !== undefined) {
+      return item[lang][field];
+    }
+    return "";
+  };
+
   return (
     <div className="menu-item">
       <div className="menu-content">
         <div className="item-header">
           {editable ? (
-            <input
-              className="item-name"
-              value={item.name || ""}
-              onChange={(e) => onChange?.("name", e.target.value)}
-              onFocus={handleInputFocus}
-              placeholder="Назва страви"
-              style={{ 
-                border: "1px solid #ddd", 
-                borderRadius: 6, 
-                padding: "8px 12px",
-                color: "#333",
-                backgroundColor: "#fff",
-                fontSize: "16px",
-                width: "100%",
-                boxSizing: "border-box"
-              }}
-            />
+            <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: "8px" }}>
+              <input
+                className="item-name"
+                value={getItemValue("uk", "name") || ""}
+                onChange={(e) => onChange?.("name_uk", e.target.value)}
+                onFocus={handleInputFocus}
+                placeholder="Назва страви (Українська)"
+                style={{ 
+                  border: "1px solid #ddd", 
+                  borderRadius: 6, 
+                  padding: "8px 12px",
+                  color: "#333",
+                  backgroundColor: "#fff",
+                  fontSize: "16px",
+                  width: "100%",
+                  boxSizing: "border-box"
+                }}
+              />
+              <input
+                className="item-name"
+                value={getItemValue("en", "name") || ""}
+                onChange={(e) => onChange?.("name_en", e.target.value)}
+                onFocus={handleInputFocus}
+                placeholder="Назва страви (English)"
+                style={{ 
+                  border: "1px solid #ddd", 
+                  borderRadius: 6, 
+                  padding: "8px 12px",
+                  color: "#333",
+                  backgroundColor: "#fff",
+                  fontSize: "16px",
+                  width: "100%",
+                  boxSizing: "border-box"
+                }}
+              />
+            </div>
           ) : (
             <div className="item-name">{item.name}</div>
           )}
@@ -128,26 +154,48 @@ const MenuItem = ({
         </div>
 
         {editable ? (
-          <textarea
-            className="item-description"
-            value={item.description || ""}
-            onChange={(e) => onChange?.("description", e.target.value)}
-            onFocus={handleInputFocus}
-            placeholder="Опис страви..."
-            rows={4}
-            style={{ 
-              border: "1px solid #ddd", 
-              borderRadius: 6, 
-              padding: "8px 12px",
-              color: "#333",
-              backgroundColor: "#fff",
-              fontSize: "16px",
-              width: "100%",
-              boxSizing: "border-box",
-              resize: "vertical",
-              minHeight: "80px"
-            }}
-          />
+          <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "8px" }}>
+            <textarea
+              className="item-description"
+              value={getItemValue("uk", "description") || ""}
+              onChange={(e) => onChange?.("description_uk", e.target.value)}
+              onFocus={handleInputFocus}
+              placeholder="Опис страви (Українська)..."
+              rows={3}
+              style={{ 
+                border: "1px solid #ddd", 
+                borderRadius: 6, 
+                padding: "8px 12px",
+                color: "#333",
+                backgroundColor: "#fff",
+                fontSize: "16px",
+                width: "100%",
+                boxSizing: "border-box",
+                resize: "vertical",
+                minHeight: "60px"
+              }}
+            />
+            <textarea
+              className="item-description"
+              value={getItemValue("en", "description") || ""}
+              onChange={(e) => onChange?.("description_en", e.target.value)}
+              onFocus={handleInputFocus}
+              placeholder="Опис страви (English)..."
+              rows={3}
+              style={{ 
+                border: "1px solid #ddd", 
+                borderRadius: 6, 
+                padding: "8px 12px",
+                color: "#333",
+                backgroundColor: "#fff",
+                fontSize: "16px",
+                width: "100%",
+                boxSizing: "border-box",
+                resize: "vertical",
+                minHeight: "60px"
+              }}
+            />
+          </div>
         ) : (
           item.description && (
             <div
@@ -209,24 +257,42 @@ const MenuItem = ({
             )}
           </div>
           {editable ? (
-            <input
-              className="item-note"
-              value={item.note || ""}
-              onChange={(e) => onChange?.("note", e.target.value)}
-              onFocus={handleInputFocus}
-              placeholder="Нотатки..."
-              style={{
-                border: "1px solid #ffd6d6",
-                borderRadius: 6,
-                padding: "6px 8px",
-                color: "#333",
-                backgroundColor: "#fff",
-                fontSize: "14px",
-                width: "100%",
-                boxSizing: "border-box",
-                maxWidth: "200px"
-              }}
-            />
+            <div style={{ display: "flex", flexDirection: "column", gap: "4px", maxWidth: "200px" }}>
+              <input
+                className="item-note"
+                value={getItemValue("uk", "note") || ""}
+                onChange={(e) => onChange?.("note_uk", e.target.value)}
+                onFocus={handleInputFocus}
+                placeholder="Нотатки (УК)..."
+                style={{
+                  border: "1px solid #ffd6d6",
+                  borderRadius: 6,
+                  padding: "6px 8px",
+                  color: "#333",
+                  backgroundColor: "#fff",
+                  fontSize: "14px",
+                  width: "100%",
+                  boxSizing: "border-box"
+                }}
+              />
+              <input
+                className="item-note"
+                value={getItemValue("en", "note") || ""}
+                onChange={(e) => onChange?.("note_en", e.target.value)}
+                onFocus={handleInputFocus}
+                placeholder="Note (EN)..."
+                style={{
+                  border: "1px solid #ffd6d6",
+                  borderRadius: 6,
+                  padding: "6px 8px",
+                  color: "#333",
+                  backgroundColor: "#fff",
+                  fontSize: "14px",
+                  width: "100%",
+                  boxSizing: "border-box"
+                }}
+              />
+            </div>
           ) : (
             item.note && <span className="item-note">{item.note}</span>
           )}
