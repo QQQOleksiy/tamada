@@ -299,54 +299,54 @@ const MenuItem = ({
         </div>
       </div>
 
-      <div className="menu-image">
-        {editable ? (
-          <label style={{ cursor: 'pointer' }}>
-            <img src={item.image || "/image.png"} alt={item.name} />
-            <input
-              type="file"
-              accept="image/*"
-              style={{ display: 'none' }}
-              onChange={handleImageUpload}
-            />
-          </label>
-        ) : (
-          <img src={item.image || "/image.png"} alt={item.name} />
-        )}
-        {editable && (
-          <button
-            onClick={onDelete}
-            style={{
-              position: 'absolute',
-              top: '8px',
-              right: '8px',
-              background: '#ff4d4d',
-              color: 'white',
-              border: 'none',
-              borderRadius: '50%',
-              width: '28px',
-              height: '28px',
-              cursor: 'pointer',
-              fontSize: '18px',
-              lineHeight: '28px',
-              textAlign: 'center',
-              boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
-              zIndex: 10,
-              transition: 'all 0.2s ease'
-            }}
-            onMouseOver={(e) => {
-              e.target.style.background = '#e63939';
-              e.target.style.transform = 'scale(1.1)';
-            }}
-            onMouseOut={(e) => {
-              e.target.style.background = '#ff4d4d';
-              e.target.style.transform = 'scale(1)';
-            }}
-          >
-            &times;
-          </button>
-        )}
-      </div>
+      {(item.image && item.image !== "/image.png" || editable) && (
+        <div className="menu-image">
+          {editable ? (
+            <>
+              {item.image && item.image !== "/image.png" && (
+                <button 
+                  className="remove-photo-btn" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    onChange?.('image', '');
+                  }}
+                  title="Видалити фото"
+                >
+                  &times;
+                </button>
+              )}
+              <label style={{ cursor: 'pointer', width: '100%', height: '100%', display: 'block' }}>
+                {item.image && item.image !== "/image.png" ? (
+                  <img src={item.image} alt={item.name} />
+                ) : (
+                  <div className="image-placeholder">
+                    <span>+ Фото</span>
+                  </div>
+                )}
+                <input
+                  type="file"
+                  accept="image/*"
+                  style={{ display: 'none' }}
+                  onChange={handleImageUpload}
+                />
+              </label>
+            </>
+          ) : (
+            item.image && item.image !== "/image.png" && <img src={item.image} alt={item.name} />
+          )}
+        </div>
+      )}
+
+      {editable && (
+        <button
+          className="delete-item-btn"
+          onClick={onDelete}
+          title="Видалити позицію"
+        >
+          &times;
+        </button>
+      )}
     </div>
   );
 };
