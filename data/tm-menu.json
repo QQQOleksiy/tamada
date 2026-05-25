@@ -1,1707 +1,1858 @@
 {
-    "menu": {
-      "side_dishes": {
-        "title": {
-          "en": "Side Entree",
-          "uk": "Гарніри"
-        },
-        "items": [
-          {
-            "en": {
-              "name": "Caucasian style potatoes",
-              "weight": "250g",
-              "price": "99₴"
-            },
-            "uk": {
-              "name": "Картопля по-грузинськи",
-              "weight": "300г",
-              "price": "129₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Homemade potatoes",
-              "weight": "250g",
-              "price": "99₴"
-            },
-            "uk": {
-              "name": "Картопля по-домашньому",
-              "weight": "300г",
-              "price": "129₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Grilled vegetables",
-              "description": "(eggplant, zucchini, bell peppers, tomatoes, onions, mushrooms)",
-              "weight": "300g",
-              "price": "229₴"
-            },
-            "uk": {
-              "name": "Овочі гриль",
-              "description": "(баклажан, кабачок, болгарський перець, помідор, цибуля, гриби)",
-              "weight": "300г",
-              "price": "249₴"
-            }
-          }
-        ]
+  "menu": {
+    "side_dishes": {
+      "title": {
+        "en": "Side Entree",
+        "uk": "Гарніри"
       },
-      "salads_and_cold_appetizers": {
-        "title": {
-          "en": "Salads & Cold Appetizers",
-          "uk": "Салати та холодні закуски"
+      "items": [
+        {
+          "en": {
+            "name": "Homemade potatoes",
+            "description": "not spicy potatoes",
+            "weight": "300g"
+          },
+          "uk": {
+            "name": "Картопля по-домашньому",
+            "description": "не гостра ",
+            "weight": "300г"
+          },
+          "price": "169₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1779190624/tamada-menu/iwmk4ydpsvntyhk4hl1c.png"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Vegetable platter",
-              "description": "(tomato, cucumber, bell pepper)",
-              "weight": "280g",
-              "price": "219₴"
-            },
-            "uk": {
-              "name": "Овочеве плато",
-              "description": "(помідор, огірок, перець болгарський)",
-              "weight": "300г",
-              "price": "239₴"
-            }
+        {
+          "name": "Нова страва",
+          "description": "Опис...",
+          "price": "169₴",
+          "weight": "300г",
+          "uk": {
+            "name": "Картопля по-грузинськи",
+            "description": "гостра з грузинськими приправами"
           },
-          {
-            "en": {
-              "name": "Georgian Salad with walnuts",
-              "weight": "280g",
-              "price": "229₴"
-            },
-            "uk": {
-              "name": "Салат грузинський",
-              "description": "(огірок, помідор, горіх.паста)",
-              "weight": "300г",
-              "price": "259₴"
-            }
+          "en": {
+            "name": "Georgian potatoes",
+            "description": "spicy with Georgian spices"
           },
-          {
-            "en": {
-              "name": "Chicken Salad",
-              "description": "(chicken fillet, cucumber, lettuce, sauce)",
-              "weight": "280g",
-              "price": "229₴"
-            },
-            "uk": {
-              "name": "Салат курячий",
-              "description": "(куряче Філе, огірок, листя салату, соус)",
-              "weight": "300г",
-              "price": "259₴"
-            }
+          "note": "test",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1779190639/tamada-menu/kxjwxz0gfjaygvldyupk.png"
+        },
+        {
+          "name": "",
+          "description": "",
+          "price": "169₴",
+          "weight": "300г",
+          "uk": {
+            "name": "Рис з овочами",
+            "description": "ароматний рис, приготований з соковитими овочами та легкими спеціями. Легко, смачно і корисно"
           },
-          {
-            "en": {
-              "name": "Platter of Georgian pickles",
-              "description": "(cucumber, tomato, garlic, cabbage)",
-              "weight": "280g",
-              "price": "209₴"
-            },
-            "uk": {
-              "name": "Плато грузинських солінь",
-              "description": "(огірок, помідор, часник, капуста)",
-              "weight": "300г",
-              "price": "249₴"
-            }
+          "en": {
+            "name": "Rice with vegetables",
+            "description": "fragrant rice cooked with juicy vegetables and light spices. Easy, tasty and healthy"
           },
-          {
-            "en": {
-              "name": "Badrijani",
-              "description": "(fried eggplant in nut paste)",
-              "weight": "250g",
-              "price": "239₴"
-            },
-            "uk": {
-              "name": "Бадріджані",
-              "description": "(баклажан смажений в горіх.пасті)",
-              "weight": "270г",
-              "price": "259₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Ajapsandali",
-              "description": "(eggplant, bell peppers)",
-              "weight": "280g",
-              "price": "209₴"
-            },
-            "uk": {
-              "name": "Аджапсандалі",
-              "description": "(баклажан, перець болгарський, кабачки)",
-              "weight": "300г",
-              "price": "269₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Pkhali",
-              "description": "(spinach in nut paste)",
-              "weight": "250g",
-              "price": "209₴"
-            },
-            "uk": {
-              "name": "Пхалі",
-              "description": "(шпинат у горіховій пасті)",
-              "weight": "250г",
-              "price": "209₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Assorted pkhali",
-              "description": "(bell peppers, eggplant in nut paste)",
-              "weight": "350g",
-              "price": "249₴"
-            },
-            "uk": {
-              "name": "Асорті пхалі",
-              "description": "(посезонно) (перець, баклажан в горіх. пасті)",
-              "weight": "370г",
-              "price": "279₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Cheese platter",
-              "description": "(with honey)",
-              "weight": "160g",
-              "price": "219₴"
-            },
-            "uk": {
-              "name": "Сирна тарілка",
-              "weight": "180г",
-              "price": "249₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Guruli salad (chicken)",
-              "description": "(chicken fillet, radish, bell pepper, lettuce, walnut paste)",
-              "weight": "300g",
-              "price": "249₴"
-            },
-            "uk": {
-              "name": "Салат Гурулі куряче",
-              "description": "(куряче філе,редиска,болгарський перець,листя салату,горіхова паста)",
-              "weight": "300г",
-              "price": "269₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Guruli salad (beef)",
-              "description": "(beef, radish, bell pepper)",
-              "weight": "300g",
-              "price": "249₴"
-            },
-            "uk": {
-              "name": "Салат Гурулі яловиче",
-              "description": "(яловичина,редиска,болгарський перець)",
-              "weight": "300г",
-              "price": "249₴"
-            }
-          }
-        ]
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778318764/tamada-menu/lm9holiupkxetl6zwcgc.jpg"
+        }
+      ]
+    },
+    "salads_and_cold_appetizers": {
+      "title": {
+        "en": "Salads & Cold Appetizers",
+        "uk": "Салати та холодні закуски"
       },
-      "soups": {
-        "title": {
-          "en": "Soup",
-          "uk": "Перші страви"
+      "items": [
+        {
+          "en": {
+            "name": "Vegetable platter",
+            "description": "Fresh tomato, cucumber, bell pepper",
+            "weight": "280g"
+          },
+          "uk": {
+            "name": "Овочеве плато",
+            "description": "помідор, огірок, перець болгарський",
+            "weight": "300г"
+          },
+          "price": "279₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778319057/tamada-menu/gjoic5povklrlibtueck.jpg"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Kharcho",
-              "description": "(soup with beef, rice and Georgian spices)",
-              "weight": "400g",
-              "price": "199₴"
-            },
-            "uk": {
-              "name": "Харчо",
-              "description": "(суп з яловичиною, рисом та грузинськими приправами)",
-              "weight": "400г",
-              "price": "229₴"
-            }
+        {
+          "en": {
+            "name": "Georgian Salad ",
+            "weight": "280g",
+            "description": "cucumber, tomato, nut paste"
           },
-          {
-            "en": {
-              "name": "Chikhirtma",
-              "description": "(chicken broth with Georgian spices)",
-              "weight": "400g",
-              "price": "189₴"
-            },
-            "uk": {
-              "name": "Чихіртма",
-              "description": "(курячий бульйон з грузинськими приправами)",
-              "weight": "400г",
-              "price": "219₴"
-            }
+          "uk": {
+            "name": "Салат грузинський",
+            "description": "огірок, помідор, горіхова паста",
+            "weight": "300г"
           },
-          {
-            "en": {
-              "name": "Khashlama",
-              "description": "(soup with lamb, herbs and Georgian spices)",
-              "weight": "400g",
-              "price": "199₴"
-            },
-            "uk": {
-              "name": "Хашлама",
-              "description": "(суп з бараниною, зеленню та грузинськими приправами)",
-              "weight": "400г",
-              "price": "229₴"
-            }
+          "price": "299₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778316045/tamada-menu/evxeozpjpc3vlyq5i0bu.png"
+        },
+        {
+          "en": {
+            "name": "Guruli salad with beef",
+            "description": "beef, bell pepper, lettuce, cucumbers, sweet and sauce narsharab"
           },
-          {
-            "en": {
-              "name": "Broth of khinkali",
-              "description": "(broth with greens and khinkali kalakuri 5 pieces.)",
-              "weight": "400g",
-              "price": "189₴"
-            },
-            "uk": {
-              "name": "Хінкалі-бульйон",
-              "description": "(бульйон з зеленню та хінкалями калакурі 5шт.)",
-              "weight": "400г",
-              "price": "219₴"
-            }
-          }
-        ]
+          "uk": {
+            "name": "Салат Гурулі з телятиною ",
+            "description": "телятина , болгарський перець, редиска,  листя салату, огірки, горіх, соус нашараб"
+          },
+          "price": "299₴",
+          "weight": "300г",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778320550/tamada-menu/n8wghzmvdkztuo0helku.png"
+        },
+        {
+          "en": {
+            "name": "Georgian pickles platter ",
+            "description": "beef, bell pepper, lettuce, cucumbers, sweet and sour sauce",
+            "weight": "280g"
+          },
+          "uk": {
+            "name": "Плато грузинських солінь",
+            "description": "огірок, помідор, часник, капуста",
+            "weight": "300г"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778428403/tamada-menu/s2pndj8sxu5xehdt21w5.png",
+          "price": "279₴"
+        },
+        {
+          "en": {
+            "name": "Badridjani eggplants",
+            "description": "eggplant fried in nut paste",
+            "weight": "250g"
+          },
+          "uk": {
+            "name": "Бадріджані-баклажани",
+            "description": "баклажан смажений в горіховій пасті",
+            "weight": "250г"
+          },
+          "note": "посезонно",
+          "price": "279₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778318015/tamada-menu/ba6nx8yzyv402gd2qzfm.jpg"
+        },
+        {
+          "en": {
+            "name": "Ajapsandali",
+            "description": "eggplant, bell pepper, zucchini"
+          },
+          "uk": {
+            "name": "Аджапсандалі",
+            "description": "баклажан, перець болгарський, кабачки"
+          },
+          "price": "289₴",
+          "weight": "300г",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778318084/tamada-menu/nb9nojczvnz5xdryqwke.jpg"
+        },
+        {
+          "en": {
+            "name": "Assorted pkhali ",
+            "description": "bell pepper, eggplant, spinach in nut paste"
+          },
+          "uk": {
+            "name": "Асорті пхалі",
+            "description": "болгарський перець, баклажан, шпинат в горіховій пасті "
+          },
+          "note": "посезонно",
+          "weight": "370г",
+          "price": "299₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778428216/tamada-menu/mxdg3mayqknxifzsefp1.png"
+        },
+        {
+          "name": "",
+          "description": "",
+          "price": "289₴",
+          "weight": "180г",
+          "uk": {
+            "name": "Сирна тарілка",
+            "description": "сулугуні, горіхи"
+          },
+          "en": {
+            "name": "Cheese platter ",
+            "description": "suluguni cheese, nuts"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778321232/tamada-menu/ws2ard7mftzck4xstzvj.jpg"
+        },
+        {
+          "name": "",
+          "description": "",
+          "price": "329₴",
+          "weight": "300г",
+          "uk": {
+            "name": "Салат курячий ",
+            "description": "куряче філе, салат мікс, огірки, авокадо, яйця,  соус нашараб"
+          },
+          "en": {
+            "name": "",
+            "description": ""
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778428499/tamada-menu/dnnd7elsb5kq2a0jr41n.png"
+        }
+      ]
+    },
+    "soups": {
+      "title": {
+        "en": "Soup",
+        "uk": "Перші страви"
       },
-      "baked_goods": {
-        "title": {
-          "en": "Baked Goods",
-          "uk": "Випічка"
+      "items": [
+        {
+          "en": {
+            "name": "Kharcho",
+            "description": "soup with beef, rice and Georgian spices"
+          },
+          "uk": {
+            "name": "Харчо",
+            "description": "суп з яловичиною, рисом та грузинськими приправами"
+          },
+          "price": "289₴",
+          "weight": "300г",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778321367/tamada-menu/aolrp5upgbdvgtmp4r02.jpg"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Imeruli khachapuri",
-              "description": "(with suluguni cheese)",
-              "weight": "400g",
-              "price": "189₴"
-            },
-            "uk": {
-              "name": "Хачапурі по-імеретинськи",
-              "description": "(з сиром сулугуні)",
-              "weight": "400г",
-              "price": "219₴"
-            }
+        {
+          "en": {
+            "name": "Chikhirtma",
+            "description": "chicken broth with Georgian spices"
           },
-          {
-            "en": {
-              "name": "Megruli khachapuri",
-              "description": "(with suluguni cheese and cheese crust)",
-              "weight": "430g",
-              "price": "199₴"
-            },
-            "uk": {
-              "name": "Хачапурі по-мегрельськи",
-              "description": "(з сиром сулугуні та сирною скоринкою)",
-              "weight": "430г",
-              "price": "229₴"
-            }
+          "uk": {
+            "name": "Чихіртма",
+            "description": "курячий бульйон з грузинськими приправами"
           },
-          {
-            "en": {
-              "name": "Royal khachapuri",
-              "description": "(with suluguni cheese, cheese crust topped with pieces of melted cheese)",
-              "weight": "450g",
-              "price": "209₴"
-            },
-            "uk": {
-              "name": "Хачапурі по-королівськи",
-              "description": "(з сиром сулугуні, сирною скоринкою та шматочками розплавленого сиру зверху)",
-              "weight": "450г",
-              "price": "239₴"
-            }
+          "weight": "400г",
+          "price": "269₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778321392/tamada-menu/bwczmhxpl3uuh3csdztz.png"
+        },
+        {
+          "en": {
+            "name": "Khashlama",
+            "description": "soup with lamb, herbs and Georgian spices",
+            "weight": "400g"
           },
-          {
-            "en": {
-              "name": "Kubdari",
-              "description": "(Georgian felled bread that contains chunks of meat spices and onions)",
-              "weight": "420g",
-              "price": "209₴"
-            },
-            "uk": {
-              "name": "Хачапурі Кубдарі",
-              "description": "(з м'ясом)",
-              "weight": "420г",
-              "price": "239₴"
-            }
+          "uk": {
+            "name": "Хашлама",
+            "description": "суп з бараниною, зеленню та грузинськими приправами",
+            "weight": "400г"
           },
-          {
-            "en": {
-              "name": "Kubdari with cheese",
-              "description": "(with meat and cheese)",
-              "weight": "450g",
-              "price": "219₴"
-            },
-            "uk": {
-              "name": "Хачапурі Кубдарі з сиром",
-              "description": "(з м'ясом та сиром)",
-              "weight": "450г",
-              "price": "249₴"
-            }
+          "price": "289₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778321517/tamada-menu/jfwrjyveh14fh3uuf8yy.jpg"
+        },
+        {
+          "en": {
+            "name": "Broth of khinkali",
+            "description": "broth with greens and khinkali ",
+            "weight": "400g"
           },
-          {
-            "en": {
-              "name": "Lobiani",
-              "description": "(traditional Georgian dish of bean-filled bread)",
-              "weight": "400g",
-              "price": "189₴"
-            },
-            "uk": {
-              "name": "Хачапурі Лобіані",
-              "description": "(з квасолею)",
-              "weight": "400г",
-              "price": "219₴"
-            }
+          "uk": {
+            "name": "Хінкалі-бульйон",
+            "description": "бульйон з зеленню та хінкалями ",
+            "weight": "400г"
           },
-          {
-            "en": {
-              "name": "Adjaruli khachapuri",
-              "description": "(pie sauce with cheese filing and egg yolk)",
-              "weight": "400g",
-              "price": "229₴"
-            },
-            "uk": {
-              "name": "Хачапурі по-аджарськи",
-              "description": "(пиріг-човник з сирною начинкою та яєчним жовтком)",
-              "weight": "400г",
-              "price": "259₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Khachapuri Ispanakhu",
-              "description": "(with cheese and spinach)",
-              "weight": "420g",
-              "price": "189₴"
-            },
-            "uk": {
-              "name": "Хачапурі Іспанахи",
-              "description": "(з сиром та шпинатом)",
-              "weight": "420г",
-              "price": "219₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Special khachapuri TAMADA",
-              "description": "(with cheese, meat and spinach)",
-              "weight": "600g",
-              "price": "239₴"
-            },
-            "uk": {
-              "name": "Фірмовий хачапурі Тамада",
-              "description": "(з сиром, м'ясом та шпинатом)",
-              "weight": "600г",
-              "price": "269₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Georgian bread, Shoti",
-              "description": "(own baking)",
-              "weight": "250g",
-              "price": "39₴"
-            },
-            "uk": {
-              "name": "Грузинський хліб",
-              "description": "(власної випічки)",
-              "weight": "250г",
-              "price": "39₴"
-            }
-          }
-        ]
+          "price": "269₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778428461/tamada-menu/jubq1s3bbzzmas7kcazy.png"
+        }
+      ]
+    },
+    "baked_goods": {
+      "title": {
+        "en": "Baked Goods",
+        "uk": "Випічка"
       },
-      "khinkali": {
-        "title": {
-          "en": "Khinkali",
-          "uk": "Хінкалі"
+      "items": [
+        {
+          "en": {
+            "name": "Imeruli khachapuri",
+            "description": "with suluguni cheese",
+            "weight": "400g"
+          },
+          "uk": {
+            "name": "Хачапурі по-імеретинськи",
+            "description": "з сиром сулугуні",
+            "weight": "400г"
+          },
+          "price": "279₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778322143/tamada-menu/m3qkkzyxkrclqxm6jyt2.jpg"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Khinkali with meat",
-              "weight": "1 piece",
-              "price": "35₴",
-              "note": "(minimum order - 5 pieces)"
-            },
-            "uk": {
-              "name": "Хінкалі з м'ясом",
-              "weight": "1 шт",
-              "price": "35₴",
-              "note": "(мінімальне замовлення - 5штук)"
-            }
+        {
+          "en": {
+            "name": "Megruli khachapuri",
+            "description": "with suluguni cheese and cheese crust",
+            "weight": "430g"
           },
-          {
-            "en": {
-              "name": "Khinkali with cheese",
-              "weight": "1 piece",
-              "price": "35₴",
-              "note": "(minimum order - 5 pieces)"
-            },
-            "uk": {
-              "name": "Хінкалі з сиром",
-              "weight": "1 шт",
-              "price": "35₴",
-              "note": "(мінімальне замовлення - 5штук)"
-            }
+          "uk": {
+            "name": "Хачапурі по-мегрельськи",
+            "description": "з сиром сулугуні та сирною скоринкою",
+            "weight": "430г"
           },
-          {
-            "en": {
-              "name": "Fried khinkali",
-              "weight": "1 piece",
-              "price": "40₴",
-              "note": "(minimum order - 5 pieces)"
-            },
-            "uk": {
-              "name": "Хінкалі смажені",
-              "weight": "1 шт",
-              "price": "40₴",
-              "note": "(мінімальне замовлення - 5штук)"
-            }
-          }
-        ]
+          "price": "289₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778321885/tamada-menu/ip4zdytmzhgdbj3ubcii.png"
+        },
+        {
+          "en": {
+            "name": "Royal khachapuri",
+            "description": "with suluguni cheese, cheese crust topped with pieces of melted cheese",
+            "weight": "450g"
+          },
+          "uk": {
+            "name": "Хачапурі по-королівськи",
+            "description": "з сиром сулугуні, сирною скоринкою та шматочками розплавленого сиру зверху",
+            "weight": "450г"
+          },
+          "price": "299₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778322187/tamada-menu/qxqta5khuudpmvzzlii3.jpg"
+        },
+        {
+          "en": {
+            "name": "Kubdari",
+            "description": "Georgian felled bread that contains chunks of meat spices and onions",
+            "weight": "420g"
+          },
+          "uk": {
+            "name": "Хачапурі Кубдарі",
+            "description": "м’яке тісто, наповнене соковитим м’ясом та ароматними спеціями",
+            "weight": "420г"
+          },
+          "price": "289₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778322391/tamada-menu/djroyuunqrbls3zglwai.jpg"
+        },
+        {
+          "en": {
+            "name": "Kubdari with cheese",
+            "description": "with meat and cheese",
+            "weight": "450g"
+          },
+          "uk": {
+            "name": "Хачапурі Кубдарі з сиром",
+            "description": "ніжне тісто з тягучою сирною начинкою із сулугуні та імеретинського сиру ти мʼясом",
+            "weight": "450г"
+          },
+          "price": "299₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778322435/tamada-menu/mue6kkdxocqg93t4bjrs.jpg"
+        },
+        {
+          "en": {
+            "name": "Adjaruli khachapuri",
+            "description": "pie sauce with cheese filing and egg yolk",
+            "weight": "400g"
+          },
+          "uk": {
+            "name": "Хачапурі по-аджарськи",
+            "description": "лодочка з м’якого тіста, наповнена тягучим сиром, з яйцем у середині. Дуже ароматно і по-справжньому грузинське",
+            "weight": "400г"
+          },
+          "price": "310₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778316857/tamada-menu/k0ylbsm3smyudq32yu5x.png"
+        },
+        {
+          "en": {
+            "name": "Khachapuri Ispanakhu",
+            "description": "with cheese and spinach",
+            "weight": "420g"
+          },
+          "uk": {
+            "name": "Хачапурі Іспанахи",
+            "description": "м’яке тісто з тягучою сирною начинкою та свіжим ароматним шпинатом. Легка кислинка зелені гармонійно поєднується із ніжним сиром, роблячи страву ситною та ароматною ",
+            "weight": "420г"
+          },
+          "price": "289₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778322538/tamada-menu/riiqm0psc7ey3jentaem.png"
+        },
+        {
+          "en": {
+            "name": "Special khachapuri TAMADA",
+            "description": "with cheese, meat and spinach",
+            "weight": "600g"
+          },
+          "uk": {
+            "name": "Фірмовий хачапурі Тамада",
+            "description": "з сиром, м'ясом та шпинатом",
+            "weight": "600г"
+          },
+          "price": "349₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778324389/tamada-menu/ze13rrfl9iomvm5ixeoy.png"
+        },
+        {
+          "en": {
+            "name": "Georgian bread, Shoti",
+            "description": "own baking",
+            "weight": "250g"
+          },
+          "uk": {
+            "name": "Грузинський хліб",
+            "description": "власна випічка",
+            "weight": "250г"
+          },
+          "price": "49₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778322974/tamada-menu/sipzbbixei4tx2rgrqvr.png"
+        }
+      ]
+    },
+    "khinkali": {
+      "title": {
+        "en": "Khinkali",
+        "uk": "Хінкалі"
       },
-      "hot_entree": {
-        "title": {
-          "en": "Hot Entree",
-          "uk": "Гарячі страви"
+      "items": [
+        {
+          "en": {
+            "name": "Khinkali with meat",
+            "note": "(minimum order - 5 pieces)",
+            "description": "juicy khinkali with beef, aromatic spices and tender dough"
+          },
+          "uk": {
+            "name": "Хінкалі з яловичиною",
+            "note": "(мінімальне замовлення - 5штук)",
+            "description": "соковиті хінкалі з яловичиною, ароматними спеціями та ніжним тістом "
+          },
+          "price": "45₴",
+          "weight": "100г",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778323718/tamada-menu/c9doayy1vdi4awck06fh.png"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Mushrooms baked with suluguni",
-              "description": "(champignon, cheese suluguni)",
-              "weight": "250g",
-              "price": "219₴"
-            },
-            "uk": {
-              "name": "Гриби на кеці",
-              "description": "(смажені шампіньйони з сирною начинкою сулугуні)",
-              "weight": "250г",
-              "price": "249₴"
-            }
+        {
+          "en": {
+            "name": "Khinkali with cheese",
+            "note": "(minimum order - 5 pieces)",
+            "description": "tender khinkali with creamy cheese filling, soft dough and delicate creamy taste"
           },
-          {
-            "en": {
-              "name": "Chkmeruli",
-              "description": "(fried chicken in creamy-garlic sauce)",
-              "weight": "300g",
-              "price": "239₴"
-            },
-            "uk": {
-              "name": "Чкмерулі",
-              "description": "(смажене куряче стегно в вершково-часниковому соусі)",
-              "weight": "300г",
-              "price": "259₴"
-            }
+          "uk": {
+            "name": "Хінкалі з сиром",
+            "note": "(мінімальне замовлення - 5штук)",
+            "description": "ніжні хінкалі з кремовою сирною начинкою, з м’яким тістом та делікатним вершковим смаком"
           },
-          {
-            "en": {
-              "name": "Lobio",
-              "description": "(red beans with Georgian spices)",
-              "weight": "250g",
-              "price": "219₴"
-            },
-            "uk": {
-              "name": "Лобіо по-грузинськи",
-              "description": "(квасоля з грузинськими приправами)",
-              "weight": "250г",
-              "price": "239₴"
-            }
+          "price": "42₴",
+          "weight": "100г",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778323769/tamada-menu/xe3phckkogj81zseonck.png"
+        },
+        {
+          "en": {
+            "name": "Fried khinkali",
+            "note": "(minimum order - 5 pieces)",
+            "description": "juicy lamb in delicate dough - a classic of Georgian cuisine"
           },
-          {
-            "en": {
-              "name": "Chanakhi with a bread cap",
-              "description": "(potatoes, meat with a sleeve of yeasted dough)",
-              "weight": "300g",
-              "price": "239₴"
-            },
-            "uk": {
-              "name": "Чанахи з хлібною шапочкою",
-              "description": "(картопля, м'ясо, під шапочкою дріждьового тіста)",
-              "weight": "300г",
-              "price": "259₴"
-            }
+          "uk": {
+            "name": "Хінкалі з бараниною",
+            "note": "(мінімальне замовлення - 5штук)",
+            "description": "соковита баранина в ніжному тісті - класика грузинської кухні"
           },
-          {
-            "en": {
-              "name": "Satsivi",
-              "description": "(chicken in nut paste)",
-              "weight": "300g",
-              "price": "249₴"
-            },
-            "uk": {
-              "name": "Сациві",
-              "description": "(курка в горіховій пасті)",
-              "weight": "300г",
-              "price": "269₴"
-            }
+          "weight": "100г",
+          "price": "45₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778323789/tamada-menu/jw6a9xj6vjw5mtj2tp18.png"
+        },
+        {
+          "name": "",
+          "description": "",
+          "price": "250₴",
+          "weight": "500г",
+          "uk": {
+            "name": "Хінкалі СЕТ смажені  з телятиною/ бараниною/ cиром",
+            "description": "соковиті хінкалі, обсмажені на шампурі до золотистої скоринки. Зовні хрусткі, всередині ніжні та ароматні — ідеальна страва для любителів яскравого грузинського смаку"
           },
-          {
-            "en": {
-              "name": "Ojakhuri",
-              "description": "(stewed pork with potatoes, onions, garlic)",
-              "weight": "300g",
-              "price": "249₴"
-            },
-            "uk": {
-              "name": "Оджахурі",
-              "description": "(тушкована свинина, картопля, цибуля, часник)",
-              "weight": "300г",
-              "price": "269₴"
-            }
+          "en": {
+            "name": "Khinkali SET fried with veal/lamb/cheese",
+            "description": "Juicy khinkali, fried on a skewer until golden brown. Crispy on the outside, tender and fragrant on the inside - the perfect dish for lovers of bright Georgian flavor"
           },
-          {
-            "en": {
-              "name": "Chashushuli",
-              "description": "(stewed veal in tomato sauce)",
-              "weight": "300g",
-              "price": "259₴"
-            },
-            "uk": {
-              "name": "Чашушулі",
-              "description": "(тушкована телятина в томатному соусі)",
-              "weight": "300г",
-              "price": "279₴"
-            }
+          "note": "5 шт",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1779190367/tamada-menu/yoj02b9wl50zegrjj5bl.jpg"
+        },
+        {
+          "name": "",
+          "description": "",
+          "price": "49₴",
+          "weight": "",
+          "uk": {
+            "name": "Хінкалі смажені ",
+            "description": "соковиті хінкалі (з сиром/ мясом), обсмажені на шампурі до золотистої скоринки"
           },
-          {
-            "en": {
-              "name": "Lamb with vegetables",
-              "description": "(stewed lamb, bulgarian pepper, eggplant, zucchini, onions, greens)",
-              "weight": "300g",
-              "price": "249₴"
-            },
-            "uk": {
-              "name": "Баранина з овочами",
-              "description": "(тушкована баранина, перець болгарський, баклажан, кабачок, цибуля, зелень)",
-              "weight": "300г",
-              "price": "269₴"
-            }
+          "en": {
+            "name": "Fried khinkali",
+            "description": "juicy khinkali (with cheese/meat), fried on a skewer until golden brown"
           },
-          {
-            "en": {
-              "name": "Trout",
-              "weight": "for 100g",
-              "price": "119₴"
-            },
-            "uk": {
-              "name": "Форель",
-              "weight": "за 100г",
-              "price": "129₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Fried thigh in tkemali sauce",
-              "weight": "300g",
-              "price": "249₴"
-            },
-            "uk": {
-              "name": "Смажене стегно в соусі ткемалі",
-              "weight": "300г",
-              "price": "249₴"
-            }
-          }
-        ]
+          "note": "1 шт",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1779191104/tamada-menu/usoul5cn1lqybtcfoutf.png"
+        }
+      ]
+    },
+    "hot_entree": {
+      "title": {
+        "en": "Hot Entree",
+        "uk": "Гарячі страви"
       },
-      "special_from_the_grill": {
-        "title": {
-          "en": "Special from the Grill",
-          "uk": "Страви на грилі"
+      "items": [
+        {
+          "en": {
+            "name": "Mushrooms baked with suluguni",
+            "description": "champignon, cheese suluguni",
+            "weight": "250g"
+          },
+          "uk": {
+            "name": "Гриби на кеці",
+            "description": "грибочки обсмажені та запечені на кеці з тягучим сиром сулугуні. Насичений смак і аромат роблять цю страву справжньою насолодою",
+            "weight": "250г"
+          },
+          "price": "279₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778325476/tamada-menu/rqzssovy060dglkywaan.jpg"
         },
-        "note": {
-          "en": "(barbecue - the minimum order 200-240g for 1 skewer)",
-          "uk": "(шашлик - мінімальне замовлення 200-240г за 1 шампур)"
+        {
+          "en": {
+            "name": "Chkmeruli",
+            "description": "fried chicken in creamy-garlic sauce",
+            "weight": "300g"
+          },
+          "uk": {
+            "name": "Чкмерулі",
+            "description": "курочка приготована в ароматному соусі, запечена до рум’яної скоринки. Страва з насиченим смаком та теплим домашнім ароматом",
+            "weight": "300г"
+          },
+          "price": "309₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778325258/tamada-menu/gmq6tknl1ljehywilrdr.png"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Lula veal kebab",
-              "description": "(with sauce)",
-              "weight": "160/220g",
-              "price": "189₴"
-            },
-            "uk": {
-              "name": "Люля-кебаб з телятиною",
-              "description": "(з соусом)",
-              "weight": "160/220г",
-              "price": "209₴"
-            }
+        {
+          "en": {
+            "name": "Chanakhi with a bread cap",
+            "description": "potatoes, meat with a sleeve of yeasted dough",
+            "weight": "300g"
           },
-          {
-            "en": {
-              "name": "Lula lamb kebab",
-              "description": "(with sauce)",
-              "weight": "160/220g",
-              "price": "199₴"
-            },
-            "uk": {
-              "name": "Люля-кебаб з бараниною",
-              "description": "(з соусом)",
-              "weight": "160/220г",
-              "price": "219₴"
-            }
+          "uk": {
+            "name": "Чанахи з хлібною шапочкою",
+            "description": "соковите м’ясо та тушковані овочі, запечені під хрусткою хлібною шапочкою, з ніжною картоплею",
+            "weight": "300г"
           },
-          {
-            "en": {
-              "name": "Pork shashlik",
-              "weight": "for 100g",
-              "price": "109₴"
-            },
-            "uk": {
-              "name": "Шашлик з свинини",
-              "weight": "за 100г",
-              "price": "129₴",
-              "note": "(шашлик - мінімальне замовлення 200-240г за 1 шампур)"
-            }
+          "price": "299₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778318512/tamada-menu/xyp16e3c8npg5327ggph.png"
+        },
+        {
+          "en": {
+            "name": "Satsivi with chicken",
+            "description": "chicken in nut paste",
+            "weight": "300g"
           },
-          {
-            "en": {
-              "name": "Veal shashlik",
-              "weight": "for 100g",
-              "price": "119₴"
-            },
-            "uk": {
-              "name": "Шашлик з телятини",
-              "weight": "за 100г",
-              "price": "139₴",
-              "note": "(шашлик - мінімальне замовлення 200-240г за 1 шампур)"
-            }
+          "uk": {
+            "name": "Сациві з курочкою",
+            "description": "ніжні шматочки курки в горіховій пасті та приправами",
+            "weight": "300г"
           },
-          {
-            "en": {
-              "name": "Chicken shashlik",
-              "weight": "for 100g",
-              "price": "109₴"
-            },
-            "uk": {
-              "name": "Шашлик з курятини",
-              "weight": "за 100г",
-              "price": "129₴",
-              "note": "(шашлик - мінімальне замовлення 200-240г за 1 шампур)"
-            }
+          "price": "319₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778325533/tamada-menu/r3zkvauw39ezddvvdw9t.jpg"
+        },
+        {
+          "en": {
+            "name": "Ojakhuri",
+            "description": "stewed pork with potatoes, onions, garlic",
+            "weight": "300g"
           },
-          {
-            "en": {
-              "name": "Platter Khorceuli",
-              "description": "(shashlik of veal, pork, chicken, potatoes in the caucasus, slicing ​​vegetables, Georgian sauce)",
-              "price": "999₴"
-            },
-            "uk": {
-              "name": "Плато Хорцеулі",
-              "description": "(шашлик з телятини-300г,зі свинини-300г,з курятини-300г, картопля по-домашньому-250г,нарізка овочів-250г, соус,хліб)",
-              "price": "999₴"
-            }
+          "uk": {
+            "name": "Оджахурі",
+            "description": "соковита тушкована свинина з рум’яною картоплею, ароматною цибулею та часником ",
+            "weight": "300г"
           },
-          {
-            "en": {
-              "name": "KEBAB-SET",
-              "description": "(2 lula-kebab of veal and lamb, potatoes in the caucasus, slicing ​​vegetables, Georgian sauce)",
-              "price": "599₴"
-            },
-            "uk": {
-              "name": "КЕБАБ-СЕТ",
-              "description": "(2 люля-кебаб з телятини і баранини по 160/220г, картопля по-грузинськи 250г, нарізка овочів, соус)",
-              "price": "699₴"
-            }
-          }
-        ]
+          "price": "309₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778325683/tamada-menu/fn7f8i1bjrxh45lbf6sd.jpg"
+        },
+        {
+          "en": {
+            "name": "Chashushuli",
+            "description": "stewed veal in tomato sauce",
+            "weight": "300g"
+          },
+          "uk": {
+            "name": "Чашушулі",
+            "description": "ніжна яловичина в ароматному томатному соусі з грузинськими приправами — соковито, ситно і по-справжньому смачно",
+            "weight": "300г"
+          },
+          "price": "319₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778317811/tamada-menu/okd3bpsbaak8ungcpxvw.png"
+        },
+        {
+          "en": {
+            "name": "Lamb with vegetables",
+            "description": "stewed lamb, bulgarian pepper, eggplant, zucchini, onions, greens",
+            "weight": "300g"
+          },
+          "uk": {
+            "name": "Баранина з овочами",
+            "description": "тушкована баранина, перець болгарський, баклажан, кабачок, цибуля, зелень",
+            "weight": "300г"
+          },
+          "price": "309₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778325851/tamada-menu/foupck9hsrdh9aij4v1z.jpg"
+        },
+        {
+          "en": {
+            "name": "Trout",
+            "weight": "for 100g",
+            "description": "tender trout cooked to a golden crust with nut paste"
+          },
+          "uk": {
+            "name": "Форель",
+            "weight": "за 100г",
+            "description": "ніжна  форель, приготована до золотистої скоринки з горіховою пастою"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1779190578/tamada-menu/qnl5uwsw9ebzkmhal2vj.png",
+          "price": "149₴"
+        },
+        {
+          "en": {
+            "name": "Fried thigh in tkemali sauce",
+            "weight": "300g",
+            "description": "chicken in aromatic sour tkemali sauce"
+          },
+          "uk": {
+            "name": "Курочка в соусі ткемалі",
+            "weight": "300г",
+            "description": "курка в ароматному кислуватому соусі ткемалі"
+          },
+          "price": "299₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778436780/tamada-menu/rdaox6v6hvfaqzwzmers.png"
+        }
+      ]
+    },
+    "special_from_the_grill": {
+      "title": {
+        "en": "Special from the Grill",
+        "uk": "Страви на грилі"
       },
-      "georgian_sauces": {
-        "title": {
-          "en": "Georgian Sauces",
-          "uk": "Грузинські соуси"
-        },
-        "items": [
-          {
-            "en": {
-              "name": "Adjika",
-              "weight": "50g",
-              "price": "39₴"
-            },
-            "uk": {
-              "name": "Аджика",
-              "weight": "50г",
-              "price": "39₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Tkemali",
-              "weight": "50g",
-              "price": "39₴"
-            },
-            "uk": {
-              "name": "Ткемалі",
-              "weight": "50г",
-              "price": "39₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Satsebeli",
-              "weight": "50g",
-              "price": "39₴"
-            },
-            "uk": {
-              "name": "Сацебелі",
-              "weight": "50г",
-              "price": "39₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Bage",
-              "weight": "50g",
-              "price": "45₴"
-            },
-            "uk": {
-              "name": "Баже",
-              "weight": "50г",
-              "price": "45₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Narsharab",
-              "weight": "50g",
-              "price": "45₴"
-            },
-            "uk": {
-              "name": "Наршараб",
-              "weight": "50г",
-              "price": "45₴"
-            }
-          }
-        ]
+      "note": {
+        "en": "(barbecue - the minimum order 200-240g for 1 skewer)",
+        "uk": "(шашлик - мінімальне замовлення 200-240г за 1 шампур)"
       },
-      "coffee": {
-        "title": {
-          "en": "Coffee",
-          "uk": "Кава"
+      "items": [
+        {
+          "en": {
+            "name": "Lula veal kebab",
+            "description": "(with sauce)"
+          },
+          "uk": {
+            "name": "Люля-кебаб з телятиною",
+            "description": "подається в лаваші з соусом"
+          },
+          "weight": "",
+          "price": "259₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778326887/tamada-menu/wgt0regxxoz1hoqum1lb.png"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Turkish coffee",
-              "price": "45₴"
-            },
-            "uk": {
-              "name": "Кава по-турецьки",
-              "price": "45₴"
-            }
+        {
+          "en": {
+            "name": "Lula lamb kebab",
+            "description": "(with sauce)"
           },
-          {
-            "en": {
-              "name": "Americano",
-              "price": "55₴"
-            },
-            "uk": {
-              "name": "Американо",
-              "price": "55₴"
-            }
+          "uk": {
+            "name": "Люля-кебаб з бараниною",
+            "description": "подається в лаваші з соусом"
           },
-          {
-            "en": {
-              "name": "Espresso",
-              "price": "45₴"
-            },
-            "uk": {
-              "name": "Еспресо",
-              "price": "45₴"
-            }
+          "weight": "",
+          "price": "259₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778326896/tamada-menu/ofbomue1kicqjrg4fbpo.png"
+        },
+        {
+          "en": {
+            "name": "Pork shashlik",
+            "description": "(with sauce)"
           },
-          {
-            "en": {
-              "name": "Cappuccino",
-              "price": "75₴"
-            },
-            "uk": {
-              "name": "Капучіно",
-              "price": "75₴"
-            }
+          "uk": {
+            "name": "Люля-кебаб з індичкою",
+            "description": "подається в лаваші з соусом"
           },
-          {
-            "en": {
-              "name": "Latte",
-              "price": "80₴"
-            },
-            "uk": {
-              "name": "Лате",
-              "price": "80₴"
-            }
+          "price": "259₴",
+          "weight": "",
+          "note": "",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778326918/tamada-menu/wxn1i7w2a13mhhkcmnte.png"
+        },
+        {
+          "en": {
+            "name": "Veal shashlik",
+            "description": "juicy minced meat made from tender beef and lamb, seasoned with traditional Georgian spices and sauce"
           },
-          {
-            "en": {
-              "name": "Americano with milk",
-              "price": "60₴"
-            },
-            "uk": {
-              "name": "Американо з молоком",
-              "price": "60₴"
-            }
+          "uk": {
+            "name": "Люля-кебаб по-грузинськи",
+            "description": "соковитий фарш з ніжної яловичини та баранини, приправлений традиційними грузинськими приправами та соусом"
           },
-          {
-            "en": {
-              "name": "Dopio",
-              "price": "65₴"
-            },
-            "uk": {
-              "name": "Допіо",
-              "price": "65₴"
-            }
+          "price": "259₴",
+          "weight": "250г",
+          "note": "",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778449428/tamada-menu/bsqu4f2gp6x6xtaf6gpc.png"
+        },
+        {
+          "en": {
+            "name": "Chicken shashlik",
+            "weight": "for 100g"
           },
-          {
-            "en": {
-              "name": "Flat white",
-              "price": "80₴"
-            },
-            "uk": {
-              "name": "Флет-вайт",
-              "price": "80₴"
-            }
+          "uk": {
+            "name": "Шашлик з курятини",
+            "weight": "за 100г",
+            "description": ""
           },
-          {
-            "en": {
-              "name": "Americano with Baileys",
-              "price": "159₴"
-            },
-            "uk": {
-              "name": "Американо з Бейлісом",
-              "price": "159₴"
-            }
+          "note": "шашлик - мінімальне замовлення 200-240г за 1 шампур",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778326939/tamada-menu/yoffugxxriig0flkwxuk.png",
+          "price": "149₴"
+        },
+        {
+          "en": {
+            "name": "Platter Khorceuli",
+            "description": ""
           },
-          {
-            "en": {
-              "name": "Cocoa",
-              "price": "60₴"
-            },
-            "uk": {
-              "name": "Какао",
-              "price": "60₴"
-            }
-          }
-        ]
+          "uk": {
+            "name": "Шашлик з телятини",
+            "description": ""
+          },
+          "price": "159₴",
+          "weight": "100г",
+          "note": "шашлик - мінімальне замовлення 200-240г за 1 шампур",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778327049/tamada-menu/mtl0numblvi0a2ibkfdl.png"
+        },
+        {
+          "en": {
+            "name": "pork skewers",
+            "description": ""
+          },
+          "uk": {
+            "name": "Шашлик з свинини",
+            "description": ""
+          },
+          "price": "149₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778327066/tamada-menu/gcsdn2h9ektlfe6xvpkq.png"
+        },
+        {
+          "name": "",
+          "description": "",
+          "price": "1299₴",
+          "weight": "1200г",
+          "uk": {
+            "name": "Плато Хорцеулі",
+            "description": "шашлик з телятини-300г,з свинини-300г,з курятини-300г, картопля по-домашньому-250г, нарізка овочів-250г, соус, хліб"
+          },
+          "en": {
+            "name": "Horceuli Plateau",
+            "description": "veal kebab-300g, pork kebab-300g, chicken kebab-300g, home-made potatoes-250g, sliced ​​vegetables-250g, sauce, bread"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778316383/tamada-menu/yifyuavalnax5nfm2pcn.jpg"
+        },
+        {
+          "name": "",
+          "description": "",
+          "price": "859₴",
+          "weight": "",
+          "uk": {
+            "name": "Кебаб-сет",
+            "description": "2 люля-кебаб з телятини і баранини по 160/220г, картопля по-грузинськи 250г, нарізка овочів, соус"
+          },
+          "en": {
+            "name": "Kebab-set",
+            "description": "2 veal and lamb kebabs 160/220g each, Georgian potatoes 250g, sliced ​​vegetables, sauce"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778428740/tamada-menu/br7cmfx4qk85f6xh0cjt.png"
+        }
+      ]
+    },
+    "georgian_sauces": {
+      "title": {
+        "en": "Georgian Sauces",
+        "uk": "Грузинські соуси"
       },
-      "tea": {
-        "title": {
-          "en": "Tea",
-          "uk": "Чай"
+      "items": [
+        {
+          "en": {
+            "name": "Adjika",
+            "weight": "50g",
+            "description": "fwith red pepper very spicy"
+          },
+          "uk": {
+            "name": "Аджика",
+            "weight": "50г",
+            "description": "з червоного перцю гоооостра"
+          },
+          "price": "49₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778327437/tamada-menu/mrttferojsaysh0n4gs8.jpg"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Black",
-              "price": "49₴"
-            },
-            "uk": {
-              "name": "Чорний",
-              "price": "79₴"
-            }
+        {
+          "en": {
+            "name": "Adjika",
+            "weight": "50g"
           },
-          {
-            "en": {
-              "name": "Green",
-              "price": "49₴"
-            },
-            "uk": {
-              "name": "Зелений",
-              "price": "79₴"
-            }
+          "uk": {
+            "name": "Аджика з горіхами",
+            "weight": "50г"
           },
-          {
-            "en": {
-              "name": "Fruit",
-              "price": "59₴"
-            },
-            "uk": {
-              "name": "Фруктовий",
-              "price": "79₴"
-            }
+          "price": "59₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778327732/tamada-menu/ta54k0pciatcn24vk1f0.jpg"
+        },
+        {
+          "en": {
+            "name": "Tkemali",
+            "weight": "50g"
           },
-          {
-            "en": {
-              "name": "Herbal",
-              "price": "59₴"
-            },
-            "uk": {
-              "name": "Трав’яний",
-              "price": "79₴"
-            }
+          "uk": {
+            "name": "Ткемалі",
+            "weight": "50г",
+            "description": "з сливи"
           },
-          {
-            "en": {
-              "name": "Sea buckthorn tea with orange",
-              "price": "69₴"
-            },
-            "uk": {
-              "name": "Обліпиховий",
-              "price": "99₴"
-            }
-          }
-        ]
+          "price": "49₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778437592/tamada-menu/o1wywl2icsjhbsa7ykz5.jpg"
+        },
+        {
+          "en": {
+            "name": "Satsebeli",
+            "weight": "50g"
+          },
+          "uk": {
+            "name": "Сацебелі",
+            "weight": "50г"
+          },
+          "price": "49₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778437604/tamada-menu/ntnz8nkic2v1orhcab5r.jpg"
+        },
+        {
+          "en": {
+            "name": "Baje",
+            "weight": "50g"
+          },
+          "uk": {
+            "name": "Баже",
+            "weight": "50г"
+          },
+          "price": "59₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778437614/tamada-menu/vl628mmfbthjckmvsenk.jpg"
+        },
+        {
+          "name": "",
+          "description": "",
+          "price": "59₴",
+          "weight": "50г",
+          "uk": {
+            "name": "Наршараб",
+            "description": "з гранатового соку"
+          },
+          "en": {
+            "name": "Narsharab",
+            "description": ""
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778437622/tamada-menu/dni4kvm6wq2mfdrt3hhj.jpg"
+        }
+      ]
+    },
+    "coffee": {
+      "title": {
+        "en": "Coffee",
+        "uk": "Кава"
       },
-      "desserts": {
-        "title": {
-          "en": "Desserts",
-          "uk": "Десерти"
+      "items": [
+        {
+          "en": {
+            "name": "Americano"
+          },
+          "uk": {
+            "name": "Американо"
+          },
+          "price": "69₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778428986/tamada-menu/d1c0leb119mlywrl3min.png"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Ice cream",
-              "description": "(with additives)",
-              "weight": "220g",
-              "price": "89₴"
-            },
-            "uk": {
-              "name": "Морозиво",
-              "description": "(з топінгом, з фруктами посезонно)",
-              "weight": "220г",
-              "price": "250₴"
-            }
+        {
+          "en": {
+            "name": "Espresso"
           },
-          {
-            "en": {
-              "name": "Churchkhela",
-              "weight": "1 piece",
-              "price": "89₴"
-            },
-            "uk": {
-              "name": "Чурчхела",
-              "weight": "1 шт",
-              "price": "109₴"
-            }
+          "uk": {
+            "name": "Еспресо"
           },
-          {
-            "en": {
-              "name": "Baklava",
-              "weight": "for 100g",
-              "price": "109₴"
-            },
-            "uk": {
-              "name": "Пахлава",
-              "weight": "за 100г",
-              "price": "119₴"
-            }
+          "price": "69₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778429305/tamada-menu/e175drtopojn9y5gegar.png"
+        },
+        {
+          "en": {
+            "name": "Cappuccino"
           },
-          {
-            "en": {
-              "name": "Cake of the day",
-              "weight": "150-200g",
-              "price": "159₴"
-            },
-            "uk": {
-              "name": "Торт дня",
-              "weight": "150-200г",
-              "price": "159₴"
-            }
-          }
-        ]
+          "uk": {
+            "name": "Капучіно"
+          },
+          "price": "89₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778429491/tamada-menu/cyosqet9reoesvabfvr7.png"
+        },
+        {
+          "en": {
+            "name": "Latte"
+          },
+          "uk": {
+            "name": "Лате"
+          },
+          "price": "89₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778429050/tamada-menu/fiub2d1awvxsviohuh4t.png"
+        },
+        {
+          "en": {
+            "name": "Americano with milk"
+          },
+          "uk": {
+            "name": "Американо з молоком"
+          },
+          "price": "79₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778429109/tamada-menu/hnjvzlgv2dbrenb8e7vq.png"
+        },
+        {
+          "en": {
+            "name": "Dopio"
+          },
+          "uk": {
+            "name": "Допіо"
+          },
+          "price": "75₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778429336/tamada-menu/unye0p7orz5yq8fpmrpf.png"
+        },
+        {
+          "en": {
+            "name": "Flat white"
+          },
+          "uk": {
+            "name": "Флет-вайт"
+          },
+          "price": "99₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778429642/tamada-menu/imonudxpllzb33wajwbx.png"
+        },
+        {
+          "en": {
+            "name": "Americano with Baileys",
+            "price": "159₴"
+          },
+          "uk": {
+            "name": "Кава з Бейлісом",
+            "price": "159₴"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778429570/tamada-menu/dlartv8y86ojv82nlvn2.png"
+        },
+        {
+          "name": "",
+          "description": "",
+          "price": "79₴",
+          "weight": "",
+          "uk": {
+            "name": "Кава по-турецьки",
+            "description": "100% арабіка"
+          },
+          "en": {
+            "name": "",
+            "description": ""
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778429679/tamada-menu/s4ptynyz87tgds73zt51.png"
+        }
+      ]
+    },
+    "tea": {
+      "title": {
+        "en": "Tea",
+        "uk": "Чай"
       },
-      "beverages": {
-        "title": {
-          "en": "Beverages",
-          "uk": "Холодні напої"
+      "items": [
+        {
+          "en": {
+            "name": "Black"
+          },
+          "uk": {
+            "name": "Чорний",
+            "description": "чайник 600 мл"
+          },
+          "price": "129₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778430415/tamada-menu/o0vicjudcowh9ls2wrgd.png"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Georgian lemonade",
-              "description": "(bottle)",
-              "weight": "500ml",
-              "price": "109₴"
-            },
-            "uk": {
-              "name": "Грузинський лимонад",
-              "description": "(пляшка)",
-              "weight": "500мл",
-              "price": "109₴"
-            }
+        {
+          "en": {
+            "name": "Green"
           },
-          {
-            "en": {
-              "name": "Mojito n/a",
-              "weight": "500ml",
-              "price": "99₴"
-            },
-            "uk": {
-              "name": "Мохіто б/а",
-              "weight": "500мл",
-              "price": "99₴"
-            }
+          "uk": {
+            "name": "Зелений",
+            "description": "чайник 600 мл"
           },
-          {
-            "en": {
-              "name": "Juice",
-              "weight": "250ml",
-              "price": "39₴"
-            },
-            "uk": {
-              "name": "Сік",
-              "weight": "250мл",
-              "price": "69₴"
-            }
+          "price": "129₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778430324/tamada-menu/zihw4kjrwhqpr1disdh8.png"
+        },
+        {
+          "en": {
+            "name": "Fruit"
           },
-          {
-            "en": {
-              "name": "Kvass",
-              "weight": "500ml",
-              "price": "60₴"
-            },
-            "uk": {
-              "name": "Квас",
-              "weight": "300мл",
-              "price": "70₴"
-            }
+          "uk": {
+            "name": "Фруктовий",
+            "description": "чайник 600 мл"
           },
-          {
-            "en": {
-              "name": "Pepsi",
-              "description": "(bottle)",
-              "weight": "250ml",
-              "price": "49₴"
-            },
-            "uk": {
-              "name": "Пепсі",
-              "description": "(пляшка)",
-              "weight": "250мл",
-              "price": "69₴"
-            }
+          "price": "149₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778430450/tamada-menu/iyfpe8cgufwkbafldayw.png"
+        },
+        {
+          "en": {
+            "name": "Herbal"
           },
-          {
-            "en": {
-              "name": "Borjomi",
-              "description": "(mineral water, bottle)",
-              "weight": "500ml",
-              "price": "109₴"
-            },
-            "uk": {
-              "name": "Боржомі",
-              "description": "(мінеральна вода, пляшка)",
-              "weight": "500мл",
-              "price": "139₴"
-            }
+          "uk": {
+            "name": "Трав’яний",
+            "description": "чайник 600 мл"
           },
-          {
-            "en": {
-              "name": "Carpathian source",
-              "description": "(non-carbonated water, bottle)",
-              "weight": "500ml",
-              "price": "49₴"
-            },
-            "uk": {
-              "name": "Карпатська джерельна",
-              "description": "(негазована вода, пляшка)",
-              "weight": "500мл",
-              "price": "69₴"
-            }
+          "price": "149₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778430549/tamada-menu/xv2vzm4oxntqfgjkqcjr.png"
+        },
+        {
+          "en": {
+            "name": "Sea buckthorn tea with orange"
           },
-          {
-            "en": {
-              "name": "Stewed fruit",
-              "description": "(decanter)",
-              "weight": "500ml",
-              "price": "55₴"
-            },
-            "uk": {
-              "name": "Узвар",
-              "description": "(графін)",
-              "weight": "500мл",
-              "price": "85₴"
-            }
+          "uk": {
+            "name": "Обліпиховий",
+            "description": "чайник 600 мл"
           },
-          {
-            "en": {
-              "name": "Nabeglavi",
-              "description": "(bottle)",
-              "weight": "500ml",
-              "price": "109₴"
-            },
-            "uk": {
-              "name": "Набеглаві",
-              "weight": "500мл",
-              "price": "139₴"
-            }
-          }
-        ]
+          "price": "169₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778430586/tamada-menu/qslg5xt5ylebetoqauqg.png"
+        }
+      ]
+    },
+    "desserts": {
+      "title": {
+        "en": "Desserts",
+        "uk": "Десерти"
       },
-      "draft_beer": {
-        "title": {
-          "en": "Draft Beer",
-          "uk": "Розливне пиво"
-        },
-        "items": [
-          {
-            "en": {
-              "name": "Kronenbourg blanc",
-              "weight": "0.33/0.5",
-              "price": "75/89₴"
-            },
-            "uk": {
-              "name": "Kronenbourg blanche",
-              "weight": "0.33/0.5",
-              "price": "85/99₴"
-            }
+      "items": [
+        {
+          "en": {
+            "name": "Ice cream",
+            "description": "(with additives)"
           },
-          {
-            "en": {
-              "name": "Kronenbourg",
-              "description": "(dark)",
-              "weight": "0.33/0.5",
-              "price": "75/89₴"
-            },
-            "uk": {
-              "name": "Kronenbourg",
-              "description": "(темне)",
-              "weight": "0.33/0.5",
-              "price": "85/99₴"
-            }
-          }
-        ]
+          "uk": {
+            "name": "Морозиво",
+            "description": "(з топінгом/ з фруктами посезонно)"
+          },
+          "note": "посезонно фрукти",
+          "price": "129₴",
+          "weight": "200г",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1779190486/tamada-menu/tfd7cgccv0na5dhmyyyz.png"
+        },
+        {
+          "en": {
+            "name": "Churchkhela",
+            "weight": "1 piece"
+          },
+          "uk": {
+            "name": "Чурчхела",
+            "weight": "1 шт",
+            "description": "1 шт"
+          },
+          "price": "149₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778437970/tamada-menu/lci0wpd4rqvn3oe1jph8.png"
+        },
+        {
+          "en": {
+            "name": "Baklava",
+            "weight": "for 100g"
+          },
+          "uk": {
+            "name": "Пахлава",
+            "weight": "за 100г"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778327768/tamada-menu/vgkkzof97w8mwtab2wap.png",
+          "price": "139₴"
+        },
+        {
+          "en": {
+            "name": "Cake of the day",
+            "weight": "150-200g",
+            "price": "159₴"
+          },
+          "uk": {
+            "name": "Торт дня",
+            "weight": "150-200г",
+            "price": "159₴"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778438092/tamada-menu/rmihumgwth3zp7lctufj.png"
+        }
+      ]
+    },
+    "beverages": {
+      "title": {
+        "en": "Beverages",
+        "uk": "Холодні напої"
       },
-      "bottled_beer": {
-        "title": {
-          "en": "Bottled Beer",
-          "uk": "Пляшкове пиво"
+      "items": [
+        {
+          "en": {
+            "name": "Georgian lemonade",
+            "description": "(bottle)",
+            "weight": "500ml"
+          },
+          "uk": {
+            "name": "Грузинський лимонад",
+            "description": "пляшка а осортименті",
+            "weight": "500мл"
+          },
+          "price": "149₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778431627/tamada-menu/xhbrkojrwjeq9h8p5itt.png"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Hike Premium",
-              "description": "(bottle)",
-              "weight": "0.5",
-              "price": "79₴"
-            },
-            "uk": {
-              "name": "Hike Premium",
-              "description": "(пляшка)",
-              "weight": "0.5",
-              "price": "89₴"
-            }
+        {
+          "en": {
+            "name": "Mojito n/a"
           },
-          {
-            "en": {
-              "name": "Hike Blanche",
-              "description": "(bottle)",
-              "weight": "0.5",
-              "price": "79₴"
-            },
-            "uk": {
-              "name": "Hike Blanche",
-              "description": "(пляшка)",
-              "weight": "0.5",
-              "price": "89₴"
-            }
+          "uk": {
+            "name": "Мохіто б/а",
+            "description": "безалкогольне"
           },
-          {
-            "en": {
-              "name": "Senor Cartel",
-              "description": "(bottle)",
-              "weight": "0.33",
-              "price": "79₴"
-            },
-            "uk": {
-              "name": "Senor Cartel",
-              "description": "(пляшка)",
-              "weight": "0.33",
-              "price": "79₴"
-            }
-          }
-        ]
+          "price": "159₴",
+          "weight": "300г",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778431697/tamada-menu/q6gcexhqn9v9xxs0ofu4.jpg"
+        },
+        {
+          "en": {
+            "name": "Juice"
+          },
+          "uk": {
+            "name": "Сік",
+            "description": "Sandora в асортименті"
+          },
+          "weight": "280г",
+          "price": "79₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778432048/tamada-menu/oz2l2d40dwemmbddqyps.jpg"
+        },
+        {
+          "en": {
+            "name": "Pepsi",
+            "description": "(bottle)",
+            "weight": "250ml"
+          },
+          "uk": {
+            "name": "Пепсі",
+            "description": "(пляшка)",
+            "weight": "250мл"
+          },
+          "price": "79₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778328307/tamada-menu/k90zb2rnfdwfdq9ezqip.png"
+        },
+        {
+          "en": {
+            "name": "Borjomi",
+            "description": "(mineral water, bottle)",
+            "weight": "500ml"
+          },
+          "uk": {
+            "name": "Боржомі",
+            "description": "(мінеральна вода, пляшка)",
+            "weight": "500мл"
+          },
+          "price": "149₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778431903/tamada-menu/syanxvomi4ajwknvgqz7.png"
+        },
+        {
+          "en": {
+            "name": "Carpathian source",
+            "description": "(non-carbonated water, bottle)",
+            "weight": "500ml"
+          },
+          "uk": {
+            "name": "Карпатська джерельна",
+            "description": "(негазована вода, пляшка)",
+            "weight": "500мл"
+          },
+          "price": "79₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778432342/tamada-menu/stmj9mzdojue7wwtekgu.jpg"
+        },
+        {
+          "en": {
+            "name": "Stewed fruit",
+            "description": "(decanter)",
+            "weight": "500ml"
+          },
+          "uk": {
+            "name": "Узвар",
+            "description": "(графін)",
+            "weight": "500мл"
+          },
+          "price": "99₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778328033/tamada-menu/nlgozwgikodaxrkitn0f.png"
+        },
+        {
+          "en": {
+            "name": "Nabeglavi",
+            "description": "(bottle)",
+            "weight": "500ml",
+            "price": "109₴"
+          },
+          "uk": {
+            "name": "Набеглаві",
+            "weight": "500мл",
+            "price": "139₴",
+            "description": "пляшка"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778432529/tamada-menu/x5a92pnfzx4i40fo4gil.jpg"
+        }
+      ]
+    },
+    "draft_beer": {
+      "title": {
+        "en": "Draft Beer",
+        "uk": "Розливне пиво"
       },
-      "chacha": {
-        "title": {
-          "en": "Chacha",
-          "uk": "Чача"
+      "items": [
+        {
+          "en": {
+            "name": "Kronenbourg blanc"
+          },
+          "uk": {
+            "name": "Хмелевус 0.3",
+            "description": "світле нефільтроване "
+          },
+          "weight": "33г",
+          "price": "99₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778328472/tamada-menu/tpjh5xfrp4161fbcvo2l.png"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Chacha SAPERAVI",
-              "description": "40% (Georgia)",
-              "weight": "50g",
-              "price": "89₴"
-            },
-            "uk": {
-              "name": "Чача САПЕРАВІ",
-              "description": "40% (Грузія)",
-              "weight": "50г",
-              "price": "89₴"
-            }
+        {
+          "en": {
+            "name": "Kronenbourg",
+            "description": "(dark)",
+            "weight": "0.33/0.5"
           },
-          {
-            "en": {
-              "name": "Chacha RKATSYTELI",
-              "description": "40% (Georgia)",
-              "weight": "50g",
-              "price": "89₴"
-            },
-            "uk": {
-              "name": "Чача РКАЦИТЕЛІ",
-              "description": "40% (Грузія)",
-              "weight": "50г",
-              "price": "89₴"
-            }
+          "uk": {
+            "name": "Хмелевус 0.5",
+            "description": "світле нефільтроване ",
+            "weight": "0.33/0.5"
           },
-          {
-            "en": {
-              "name": "Chacha-set",
-              "description": "of 6 species (Georgia)",
-              "weight": "300g",
-              "price": "350₴"
-            },
-            "uk": {
-              "name": "Чача-сет",
-              "description": "6 видів (Грузія)",
-              "weight": "300г",
-              "price": "350₴"
-            }
-          }
-        ]
+          "price": "139₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778328475/tamada-menu/hrgatnaklrwecg8bony7.png"
+        },
+        {
+          "name": "",
+          "description": "",
+          "price": "89₴",
+          "weight": "",
+          "uk": {
+            "name": "Stella Artois 0.3",
+            "description": "світле"
+          },
+          "en": {
+            "name": "",
+            "description": ""
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778328622/tamada-menu/tap0zujx6xo5py1toylr.png"
+        },
+        {
+          "name": "",
+          "description": "",
+          "price": "129₴",
+          "weight": "",
+          "uk": {
+            "name": "Stella Artois 0.5",
+            "description": "світле"
+          },
+          "en": {
+            "name": "",
+            "description": ""
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778328627/tamada-menu/oc7hxr9czqbjqyyihu0w.png"
+        },
+        {
+          "name": "",
+          "description": "",
+          "price": "119₴",
+          "weight": "",
+          "uk": {
+            "name": "Hoegaarden 0.3",
+            "description": "світле нефільтроване "
+          },
+          "en": {
+            "name": "",
+            "description": ""
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778328777/tamada-menu/ivklwlgpysyouawymkow.png"
+        },
+        {
+          "name": "",
+          "description": "",
+          "price": "169₴",
+          "weight": "",
+          "uk": {
+            "name": "Hoegaarden 0.5",
+            "description": "світле нефільтроване "
+          },
+          "en": {
+            "name": "",
+            "description": ""
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778328783/tamada-menu/gsseyzitolqq2bzitwp2.png"
+        }
+      ]
+    },
+    "bottled_beer": {
+      "title": {
+        "en": "Bottled Beer",
+        "uk": "Пляшкове пиво"
       },
-      "homemade_wine": {
-        "title": {
-          "en": "Homemade Wines",
-          "uk": "Домашнє вино"
+      "items": [
+        {
+          "en": {
+            "name": "Hike Premium",
+            "description": "(bottle)"
+          },
+          "uk": {
+            "name": "Corona Extra",
+            "description": "світле, пляшка"
+          },
+          "price": "139₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778328847/tamada-menu/xd0ajodimqlotevakxyf.png",
+          "weight": "330г"
         },
-        "items": [
-          {
-            "en": {
-              "name": "White dry",
-              "description": "11-14% (Georgia)",
-              "weight": "100g",
-              "price": "79₴"
-            },
-            "uk": {
-              "name": "Біле сухе",
-              "description": "11-14% (Грузія)",
-              "weight": "100г",
-              "price": "79₴"
-            }
+        {
+          "en": {
+            "name": "Hike Blanche",
+            "description": "(bottle)"
           },
-          {
-            "en": {
-              "name": "White semi sweet",
-              "description": "11-14% (Georgia)",
-              "weight": "100g",
-              "price": "79₴"
-            },
-            "uk": {
-              "name": "Біле н/сол",
-              "description": "11-14% (Грузія)",
-              "weight": "100г",
-              "price": "79₴"
-            }
+          "uk": {
+            "name": "Leffe Bruin ",
+            "description": "темне, пляшка"
           },
-          {
-            "en": {
-              "name": "Red dry",
-              "description": "11-14% (Georgia)",
-              "weight": "100g",
-              "price": "79₴"
-            },
-            "uk": {
-              "name": "Червоне сухе",
-              "description": "11-14% (Грузія)",
-              "weight": "100г",
-              "price": "79₴"
-            }
+          "price": "139₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778328930/tamada-menu/qcjf3namsvmbk0lrdtsv.png",
+          "weight": "500г"
+        },
+        {
+          "en": {
+            "name": "Senor Cartel",
+            "description": "(bottle)"
           },
-          {
-            "en": {
-              "name": "Red semi sweet",
-              "description": "11-14% (Georgia)",
-              "weight": "100g",
-              "price": "79₴"
-            },
-            "uk": {
-              "name": "Червоне н/сол",
-              "description": "11-14% (Грузія)",
-              "weight": "100г",
-              "price": "79₴"
-            }
+          "uk": {
+            "name": "Stella Artois ",
+            "description": "безалкогольне, пляшка"
           },
-          {
-            "en": {
-              "name": "Pomegranate wine",
-              "description": "(Georgia)",
-              "weight": "100g",
-              "price": "85₴"
-            },
-            "uk": {
-              "name": "ГРАНАТОВЕ ВИНО",
-              "description": "(Грузія)",
-              "weight": "100г",
-              "price": "85₴"
-            }
-          },
-          {
-            "en": {
-              "name": "Mulled wine",
-              "weight": "250g",
-              "price": "85₴"
-            },
-            "uk": {
-              "name": "Глінтвейн",
-              "weight": "250г",
-              "price": "129₴"
-            }
-          }
-        ]
+          "price": "109₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778432650/tamada-menu/jvulxyogwc1ummswgf84.png",
+          "weight": "330г"
+        }
+      ]
+    },
+    "chacha": {
+      "title": {
+        "en": "Chacha",
+        "uk": "Чача"
       },
-      "vermouth": {
-        "title": {
-          "en": "Vermouth",
-          "uk": "Вермут"
-        },
-        "items": [
-          {
-            "en": {
-              "name": "Martini Bianco",
-              "description": "white 15% (Italy)",
-              "weight": "50g",
-              "price": "79₴"
-            },
-            "uk": {
-              "name": "Мартіні Б'янко",
-              "description": "біле 15% (Італія)",
-              "weight": "50г",
-              "price": "79₴"
-            }
-          }
-        ]
-      },
-      "vodka": {
-        "title": {
-          "en": "Vodka",
-          "uk": "Горілка"
-        },
-        "items": [
-          {
-            "en": {
-              "name": "Nemiroff",
-              "description": "40% (Ukraine)",
-              "weight": "50g",
-              "price": "59₴"
-            },
-            "uk": {
-              "name": "Особлива Неміров",
-              "description": "40% (Україна)",
-              "weight": "50г",
-              "price": "59₴"
-            }
+      "items": [
+        {
+          "en": {
+            "name": "Chacha SAPERAVI",
+            "description": "40% (Georgia)",
+            "weight": "50g",
+            "price": "89₴"
           },
-          {
-            "en": {
-              "name": "Finlandia",
-              "description": "40% (Finland)",
-              "weight": "50g",
-              "price": "79₴"
-            },
-            "uk": {
-              "name": "Фінляндія",
-              "description": "40% (Фінляндія)",
-              "weight": "50г",
-              "price": "79₴"
-            }
-          }
-        ]
-      },
-      "whiskey": {
-        "title": {
-          "en": "Whiskey",
-          "uk": "Віскі"
-        },
-        "items": [
-          {
-            "en": {
-              "name": "Jameson",
-              "description": "40% (Ireland)",
-              "weight": "50g",
-              "price": "109₴"
-            },
-            "uk": {
-              "name": "Джемісон",
-              "description": "40% (Ірландія)",
-              "weight": "50г",
-              "price": "109₴"
-            }
+          "uk": {
+            "name": "Чача САПЕРАВІ",
+            "description": "40% (Грузія)",
+            "weight": "50г",
+            "price": "89₴"
           },
-          {
-            "en": {
-              "name": "Jack Daniels",
-              "description": "40% (USA)",
-              "weight": "50g",
-              "price": "109₴"
-            },
-            "uk": {
-              "name": "Джек Деніелс",
-              "description": "40% (США)",
-              "weight": "50г",
-              "price": "109₴"
-            }
-          }
-        ]
-      },
-      "liqueur": {
-        "title": {
-          "en": "Liqueur",
-          "uk": "Лікер"
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778433459/tamada-menu/fy2lv6acpj21fzmvckak.png"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Baileys",
-              "description": "17% (Ireland)",
-              "weight": "50g",
-              "price": "118₴"
-            },
-            "uk": {
-              "name": "Бейліс",
-              "description": "(17% Ірландія)",
-              "weight": "50г",
-              "price": "118₴"
-            }
+        {
+          "en": {
+            "name": "Chacha RKATSYTELI",
+            "description": "40% (Georgia)",
+            "weight": "50g",
+            "price": "89₴"
           },
-          {
-            "en": {
-              "name": "Jagermeister",
-              "description": "35% (Germany)",
-              "weight": "50g",
-              "price": "89₴"
-            },
-            "uk": {
-              "name": "Егермайстер",
-              "description": "35% (Німеччина)",
-              "weight": "50г",
-              "price": "89₴"
-            }
-          }
-        ]
-      },
-      "gin": {
-        "title": {
-          "en": "Gin",
-          "uk": "Джин"
+          "uk": {
+            "name": "Чача РКАЦИТЕЛІ",
+            "description": "40% (Грузія)",
+            "weight": "50г",
+            "price": "89₴"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778433496/tamada-menu/v0c72gv9bbowlxz61m0r.png"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Gordons",
-              "description": "37,5% (London)",
-              "weight": "50g",
-              "price": "109₴"
-            },
-            "uk": {
-              "name": "Гордонс",
-              "description": "(37,5 % Великобританія)",
-              "weight": "50г",
-              "price": "109₴"
-            }
-          }
-        ]
-      },
-      "rum": {
-        "title": {
-          "en": "Rum",
-          "uk": "Ром"
+        {
+          "en": {
+            "name": "Chacha-set",
+            "description": "of 6 species (Georgia)",
+            "weight": "300g"
+          },
+          "uk": {
+            "name": "Чача-сет",
+            "description": "6 видів (Грузія)",
+            "weight": "300г"
+          },
+          "price": "399₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778329998/tamada-menu/u1jtqvvopsh6ftlxwqi8.jpg"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Bacardi Carta Blanca",
-              "description": "40% (Germany)",
-              "weight": "50g",
-              "price": "99₴"
-            },
-            "uk": {
-              "name": "Бакарді Карта Бланка",
-              "description": "40% (Німеччина)",
-              "weight": "50г",
-              "price": "99₴"
-            }
-          }
-        ]
-      },
-      "tequila": {
-        "title": {
-          "en": "Tequila",
-          "uk": "Текіла"
+        {
+          "name": "",
+          "description": "",
+          "price": "89₴",
+          "weight": "50г",
+          "uk": {
+            "name": "Чача Мцване",
+            "description": ""
+          },
+          "en": {
+            "name": "",
+            "description": ""
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778433570/tamada-menu/q1m8tjwdxeic45iqotle.png"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Tres Ochos",
-              "description": "38% (Spain)",
-              "weight": "50g",
-              "price": "109₴"
-            },
-            "uk": {
-              "name": "Трес Очос",
-              "description": "38% (Іспанія)",
-              "weight": "50г",
-              "price": "109₴"
-            }
-          }
-        ]
-      },
-      "sparkling_wine": {
-        "title": {
-          "en": "Sparkling Wine «GALACTION»",
-          "uk": "Ігристе вино"
+        {
+          "name": "",
+          "description": "",
+          "price": "89₴",
+          "weight": "50г",
+          "uk": {
+            "name": "Чача Тархун",
+            "description": ""
+          },
+          "en": {
+            "name": "",
+            "description": ""
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778433677/tamada-menu/hvhf7d3wqi1teqxl5xak.png"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Sparkling wine white brute",
-              "description": "13% (Georgia)",
-              "weight": "bottle 0,75",
-              "price": "649₴"
-            },
-            "uk": {
-              "name": "Вино ігристе біле брют",
-              "description": "13% (Грузія)",
-              "weight": "пляшка 0,75",
-              "price": "649₴"
-            }
+        {
+          "name": "",
+          "description": "",
+          "price": "89₴",
+          "weight": "50г",
+          "uk": {
+            "name": "Чача Горіх",
+            "description": ""
           },
-          {
-            "en": {
-              "name": "Sparkling wine white semi sweet",
-              "description": "12,5% (Georgia)",
-              "weight": "bottle 0,75",
-              "price": "649₴"
-            },
-            "uk": {
-              "name": "Вино ігристе біле н/сол",
-              "description": "12,5% (Грузія)",
-              "weight": "пляшка 0,75",
-              "price": "649₴"
-            }
-          }
-        ]
+          "en": {
+            "name": "",
+            "description": ""
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778433739/tamada-menu/kjbccigp6jgcfe7a9u47.png"
+        }
+      ]
+    },
+    "homemade_wine": {
+      "title": {
+        "en": "Homemade Wines",
+        "uk": "Домашнє вино"
       },
-      "white_wine": {
-        "title": {
-          "en": "White Wine",
-          "uk": "Біле вино"
+      "items": [
+        {
+          "en": {
+            "name": "White dry",
+            "description": "11-14% (Georgia)",
+            "weight": "100g",
+            "price": "79₴"
+          },
+          "uk": {
+            "name": "Біле сухе",
+            "description": "11-14% (Грузія)",
+            "weight": "100г",
+            "price": "79₴"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778433862/tamada-menu/iwt8ruj2if8mu6q0vdgo.png"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Alazanskaya Dolina semi sweet",
-              "description": "11-14,5% (Georgia)",
-              "weight": "100g/bottle 0,75",
-              "price": "89/499₴"
-            },
-            "uk": {
-              "name": "Алазанська Долина н/сол",
-              "description": "11-14,5% (Грузія)",
-              "weight": "100г/пляшка 0,75",
-              "price": "99/690₴"
-            }
+        {
+          "en": {
+            "name": "White semi sweet",
+            "description": "11-14% (Georgia)",
+            "weight": "100g",
+            "price": "79₴"
           },
-          {
-            "en": {
-              "name": "Tsinandali dry",
-              "description": "11-14,5% (Georgia)",
-              "weight": "100g/bottle 0,75",
-              "price": "99/599₴"
-            },
-            "uk": {
-              "name": "Цинандалі сухе",
-              "description": "11-14,5% (Грузія)",
-              "weight": "100г/пляшка 0,75",
-              "price": "109/760₴"
-            }
+          "uk": {
+            "name": "Біле н/сол",
+            "description": "11-14% (Грузія)",
+            "weight": "100г",
+            "price": "79₴"
           },
-          {
-            "en": {
-              "name": "Tvishi semi sweet",
-              "description": "11-14,5% (Georgia)",
-              "weight": "100g/bottle 0,75",
-              "price": "109/729₴"
-            },
-            "uk": {
-              "name": "Твіші н/сол",
-              "description": "11-14,5% (Грузія)",
-              "weight": "100г/пляшка 0,75",
-              "price": "119/780₴"
-            }
-          }
-        ]
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778433868/tamada-menu/jzwfldqnnugr3xccxpwa.png"
+        },
+        {
+          "en": {
+            "name": "Red dry",
+            "description": "11-14% (Georgia)",
+            "weight": "100g",
+            "price": "79₴"
+          },
+          "uk": {
+            "name": "Червоне сухе",
+            "description": "11-14% (Грузія)",
+            "weight": "100г",
+            "price": "79₴"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778433874/tamada-menu/leua90ayprp2oxrsq0zn.png"
+        },
+        {
+          "en": {
+            "name": "Red semi sweet",
+            "description": "11-14% (Georgia)",
+            "weight": "100g",
+            "price": "79₴"
+          },
+          "uk": {
+            "name": "Червоне н/сол",
+            "description": "11-14% (Грузія)",
+            "weight": "100г",
+            "price": "79₴"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778433878/tamada-menu/tuhahdfd9mec4arhein4.png"
+        },
+        {
+          "en": {
+            "name": "Pomegranate wine",
+            "description": "(Georgia)",
+            "weight": "100g",
+            "price": "85₴"
+          },
+          "uk": {
+            "name": "ГРАНАТОВЕ ВИНО",
+            "description": "(Грузія)",
+            "weight": "100г",
+            "price": "85₴"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778433883/tamada-menu/gggxolzuitokfbrbwu17.png"
+        },
+        {
+          "en": {
+            "name": "Mulled wine",
+            "weight": "250g",
+            "price": "85₴"
+          },
+          "uk": {
+            "name": "Глінтвейн",
+            "weight": "250г",
+            "price": "129₴",
+            "description": "з гранатового вина"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778433888/tamada-menu/xovp6muabjj4fbo45eh1.png"
+        }
+      ]
+    },
+    "vermouth": {
+      "title": {
+        "en": "Vermouth",
+        "uk": "Вермут"
       },
-      "red_wine": {
-        "title": {
-          "en": "Red Wine",
-          "uk": "Червоне вино"
+      "items": [
+        {
+          "en": {
+            "name": "Martini Bianco",
+            "description": "white 15% (Italy)",
+            "weight": "50g",
+            "price": "79₴"
+          },
+          "uk": {
+            "name": "Мартіні Б'янко",
+            "description": "біле 15% (Італія)",
+            "weight": "50г",
+            "price": "79₴"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778434167/tamada-menu/etlkwzgencvoav89n7go.png"
+        }
+      ]
+    },
+    "vodka": {
+      "title": {
+        "en": "Vodka",
+        "uk": "Горілка"
+      },
+      "items": [
+        {
+          "en": {
+            "name": "Nemiroff",
+            "description": "40% (Ukraine)",
+            "weight": "50g",
+            "price": "59₴"
+          },
+          "uk": {
+            "name": "Особлива Неміров",
+            "description": "40% (Україна)",
+            "weight": "50г",
+            "price": "59₴"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778434414/tamada-menu/xdyvp2ps93ehin28idrz.jpg"
         },
-        "items": [
-          {
-            "en": {
-              "name": "Alazanskaya Dolina semi sweet",
-              "description": "11-14,5% (Georgia)",
-              "weight": "100g/bottle 0,75",
-              "price": "89/499₴"
-            },
-            "uk": {
-              "name": "Алазанська Долина н/сол",
-              "weight": "100г/пляшка 0,75",
-              "price": "99₴"
-            }
+        {
+          "en": {
+            "name": "Finlandia",
+            "description": "40% (Finland)",
+            "weight": "50g",
+            "price": "79₴"
           },
-          {
-            "en": {
-              "name": "Saperavi dry",
-              "description": "11-14,5% (Georgia)",
-              "weight": "100g/bottle 0,75",
-              "price": "99/599₴"
-            },
-            "uk": {
-              "name": "Сапераві сухе",
-              "description": "11-14,5% (Грузія)",
-              "weight": "100г/пляшка 0,75",
-              "price": "109/760₴"
-            }
+          "uk": {
+            "name": "Фінляндія",
+            "description": "40% (Фінляндія)",
+            "weight": "50г",
+            "price": "79₴"
           },
-          {
-            "en": {
-              "name": "Mukuzani dry",
-              "description": "13,5% (Georgia)",
-              "weight": "100g/bottle 0,75",
-              "price": "109/729₴"
-            },
-            "uk": {
-              "name": "Мукузані сухе",
-              "description": "13,5% (Грузія)",
-              "weight": "100г/пляшка 0,75",
-              "price": "119/780₴"
-            }
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778435302/tamada-menu/wypkyisuwehbmoizy5jc.png"
+        }
+      ]
+    },
+    "whiskey": {
+      "title": {
+        "en": "Whiskey",
+        "uk": "Віскі"
+      },
+      "items": [
+        {
+          "en": {
+            "name": "Jameson",
+            "description": "40% (Ireland)",
+            "weight": "50g"
           },
-          {
-            "en": {
-              "name": "Kindzmarauli semi sweet",
-              "description": "11% (Georgia)",
-              "weight": "100g/bottle 0,75",
-              "price": "109/729₴"
-            },
-            "uk": {
-              "name": "Кіндзмараулі н/сол",
-              "description": "11% (Грузія)",
-              "weight": "100г/пляшка 0,75",
-              "price": "119/780₴"
-            }
-          }
-        ]
-      }
+          "uk": {
+            "name": "Джемісон",
+            "description": "40% (Ірландія)",
+            "weight": "50г"
+          },
+          "price": "139₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778435407/tamada-menu/mwdbxdl7j3gq67wlpiog.png"
+        },
+        {
+          "en": {
+            "name": "Jack Daniels",
+            "description": "40% (USA)",
+            "weight": "50g"
+          },
+          "uk": {
+            "name": "Джек Деніелс",
+            "description": "40% (США)",
+            "weight": "50г"
+          },
+          "price": "139₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778435860/tamada-menu/hfbjtjujw9ozclgzcikp.png"
+        }
+      ]
+    },
+    "liqueur": {
+      "title": {
+        "en": "Liqueur",
+        "uk": "Лікер"
+      },
+      "items": [
+        {
+          "en": {
+            "name": "Baileys",
+            "description": "17% (Ireland)",
+            "weight": "50g",
+            "price": "118₴"
+          },
+          "uk": {
+            "name": "Бейліс",
+            "description": "(17% Ірландія)",
+            "weight": "50г",
+            "price": "118₴"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778435873/tamada-menu/agunwuspunwokfzvkkf1.png"
+        },
+        {
+          "en": {
+            "name": "Jagermeister",
+            "description": "35% (Germany)",
+            "weight": "50g"
+          },
+          "uk": {
+            "name": "Егермайстер",
+            "description": "35% (Німеччина)",
+            "weight": "50г"
+          },
+          "price": "99₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778435878/tamada-menu/b6scmzhtoislzlvs35le.png"
+        }
+      ]
+    },
+    "gin": {
+      "title": {
+        "en": "Gin",
+        "uk": "Джин"
+      },
+      "items": [
+        {
+          "en": {
+            "name": "Gordons",
+            "description": "37,5% (London)",
+            "weight": "50g"
+          },
+          "uk": {
+            "name": "Гордонс",
+            "description": "(37,5 % Великобританія)",
+            "weight": "50г"
+          },
+          "price": "119₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778435891/tamada-menu/mvwduosp9ybsv7aepwcx.png"
+        }
+      ]
+    },
+    "rum": {
+      "title": {
+        "en": "Rum",
+        "uk": "Ром"
+      },
+      "items": [
+        {
+          "en": {
+            "name": "Bacardi Carta Blanca",
+            "description": "40% (Germany)",
+            "weight": "50g",
+            "price": "99₴"
+          },
+          "uk": {
+            "name": "Бакарді Карта Бланка",
+            "description": "40% (Німеччина)",
+            "weight": "50г",
+            "price": "99₴"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778435909/tamada-menu/cb7ifwj99dp4iilgvfar.png"
+        }
+      ]
+    },
+    "tequila": {
+      "title": {
+        "en": "Tequila",
+        "uk": "Текіла"
+      },
+      "items": [
+        {
+          "en": {
+            "name": "Tres Ochos",
+            "description": "38% (Spain)",
+            "weight": "50g",
+            "price": "109₴"
+          },
+          "uk": {
+            "name": "Трес Очос",
+            "description": "38% (Іспанія)",
+            "weight": "50г",
+            "price": "109₴"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778436059/tamada-menu/dleuctjkccxmml7o6dln.png"
+        }
+      ]
+    },
+    "sparkling_wine": {
+      "title": {
+        "en": "Sparkling Wine «GALACTION»",
+        "uk": "Ігристе вино"
+      },
+      "items": [
+        {
+          "en": {
+            "name": "Sparkling wine white brute",
+            "description": "13% (Georgia)",
+            "weight": "bottle 0,75",
+            "price": "649₴"
+          },
+          "uk": {
+            "name": "Вино ігристе біле брют",
+            "description": "13% (Грузія)",
+            "weight": "пляшка 0,75",
+            "price": "649₴"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778436069/tamada-menu/x9bknfxvg1afyzwxkjac.png"
+        },
+        {
+          "en": {
+            "name": "Sparkling wine white semi sweet",
+            "description": "12,5% (Georgia)",
+            "weight": "bottle 0,75",
+            "price": "649₴"
+          },
+          "uk": {
+            "name": "Вино ігристе біле н/сол",
+            "description": "12,5% (Грузія)",
+            "weight": "пляшка 0,75",
+            "price": "649₴"
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778436074/tamada-menu/ejriog2cdsghbneb4i6v.png"
+        }
+      ]
+    },
+    "white_wine": {
+      "title": {
+        "en": "White Wine",
+        "uk": "Біле вино"
+      },
+      "items": [
+        {
+          "en": {
+            "name": "Alazanskaya Dolina semi sweet",
+            "description": "11-14,5% (Georgia)"
+          },
+          "uk": {
+            "name": "Алазанська Долина н/сол",
+            "description": "11-14,5% (Грузія)"
+          },
+          "price": "99₴",
+          "weight": "100г",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778436433/tamada-menu/dpd6op5aou6cqrcgtmve.png"
+        },
+        {
+          "en": {
+            "name": "Tsinandali dry",
+            "description": "11-14,5% (Georgia)"
+          },
+          "uk": {
+            "name": "Цинандалі сухе",
+            "description": "11-14,5% (Грузія)"
+          },
+          "price": "109₴",
+          "weight": "100г",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778436455/tamada-menu/akbu7yawgbfjgblsdg2s.png"
+        },
+        {
+          "en": {
+            "name": "Tvishi semi sweet",
+            "description": "11-14,5% (Georgia)"
+          },
+          "uk": {
+            "name": "Твіші н/сол",
+            "description": "11-14,5% (Грузія)"
+          },
+          "price": "119₴",
+          "weight": "100г",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778436460/tamada-menu/whkkfj1sm7ox0sgikrde.png"
+        }
+      ]
+    },
+    "red_wine": {
+      "title": {
+        "en": "Red Wine",
+        "uk": "Червоне вино"
+      },
+      "items": [
+        {
+          "en": {
+            "name": "Alazanskaya Dolina semi sweet",
+            "description": "11-14,5% (Georgia)",
+            "price": "89/499₴"
+          },
+          "uk": {
+            "name": "Алазанська Долина н/сол",
+            "price": "99₴",
+            "description": "11-14,5% (Грузія)"
+          },
+          "weight": "100г",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778436492/tamada-menu/nktoj4rcytksndmf86az.png"
+        },
+        {
+          "en": {
+            "name": "Saperavi dry",
+            "description": "11-14,5% (Georgia)"
+          },
+          "uk": {
+            "name": "Сапераві сухе",
+            "description": "11-14,5% (Грузія)"
+          },
+          "price": "109₴",
+          "weight": "100г",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778436504/tamada-menu/o0atbsweauz7z0ymcntr.png"
+        },
+        {
+          "en": {
+            "name": "Mukuzani dry",
+            "description": "13,5% (Georgia)"
+          },
+          "uk": {
+            "name": "Мукузані сухе",
+            "description": "13,5% (Грузія)"
+          },
+          "weight": "100г",
+          "price": "119₴",
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778436508/tamada-menu/k4ttcclvza0li0zqom8k.png"
+        },
+        {
+          "name": "",
+          "description": "",
+          "price": "119₴",
+          "weight": "100г",
+          "uk": {
+            "name": "Кіндзмараулі н/сол",
+            "description": "11% (Грузія)"
+          },
+          "en": {
+            "name": "",
+            "description": ""
+          },
+          "image": "https://res.cloudinary.com/dvheyir72/image/upload/v1778436513/tamada-menu/hed559mft9yh1fp44njw.png"
+        }
+      ]
     }
   }
+}
