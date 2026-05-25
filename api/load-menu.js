@@ -1,13 +1,6 @@
-import { v2 as cloudinary } from 'cloudinary';
+import { list } from '@vercel/blob';
 import fs from 'fs';
 import path from 'path';
-
-// Налаштування Cloudinary
-cloudinary.config({
-  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-  api_key: process.env.CLOUDINARY_API_KEY,
-  api_secret: process.env.CLOUDINARY_API_SECRET,
-});
 
 export default async function handler(req, res) {
   // Дозволяємо тільки GET запити
@@ -15,28 +8,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  // Перевіряємо Environment Variables
-  const cloudName = process.env.CLOUDINARY_CLOUD_NAME;
-  const apiKey = process.env.CLOUDINARY_API_KEY;
-  const apiSecret = process.env.CLOUDINARY_API_SECRET;
-
-  console.log('Environment check:', {
-    cloudName: cloudName ? 'SET' : 'NOT SET',
-    apiKey: apiKey ? 'SET' : 'NOT SET',
-    apiSecret: apiSecret ? 'SET' : 'NOT SET'
-  });
-
-  if (!cloudName || !apiKey || !apiSecret) {
-    console.error('Missing Cloudinary environment variables');
-    return res.status(500).json({
-      error: 'Cloudinary configuration missing',
-      details: {
-        cloudName: !!cloudName,
-        apiKey: !!apiKey,
-        apiSecret: !!apiSecret
-      }
-    });
-  }
+  const blobToken = process.env.BLOB_READ_WRITE_TOKEN;
 
   // Функція для перевірки та мапінгу локальних зображень
   const mapLocalImages = (menuData) => {
@@ -47,15 +19,16 @@ export default async function handler(req, res) {
       const section = actualMenu[sectionKey];
       if (section && section.items && Array.isArray(section.items)) {
         section.items.forEach(item => {
-          if (item.image && item.image.includes('cloudinary.com')) {
+          if (item.image && (item.image.includes('cloudinary.com') || item.image.includes('vercel-storage.com'))) {
             try {
               const parts = item.image.split('/');
               const filename = parts[parts.length - 1];
-              const localFilePath = path.join(imagesDir, filename);
+              const cleanFilename = filename.split('?')[0]; // Прибираємо query параметри
+              const localFilePath = path.join(imagesDir, cleanFilename);
 
               // Якщо файл зображення існує локально в проєкті, замінюємо URL на локальний шлях
               if (fs.existsSync(localFilePath)) {
-                item.image = `/menu-images/${filename}`;
+                item.image = `/menu-images/${cleanFilename}`;
               }
             } catch (err) {
               console.error('Error mapping local image:', err);
@@ -68,24 +41,36 @@ export default async function handler(req, res) {
   };
 
   try {
-    // Спочатку спробуємо завантажити меню з Cloudinary
+    // Якщо немає токена Vercel Blob, одразу переходимо до локального файлу
+    if (!blobToken) {
+      console.warn('BLOB_READ_WRITE_TOKEN is not set, skipping Vercel Blob and using local fallback');
+      throw new Error('BLOB_READ_WRITE_TOKEN is missing');
+    }
+
+    // Спроба завантажити меню з Vercel Blob
     try {
-      console.log('Attempting to load menu from Cloudinary...');
-      const result = await cloudinary.api.resource('tamada-menu/menu-data', {
-        resource_type: 'raw'
+      console.log('Attempting to list blobs from Vercel Storage...');
+      const { blobs } = await list({
+        token: blobToken,
       });
 
-      console.log('Cloudinary result:', result);
+      // Шукаємо файли конфігурації меню та сортуємо їх від найновішого до найстарішого
+      const menuBlobs = blobs
+        .filter(b => b.pathname.startsWith('tamada-menu/menu-data'))
+        .sort((a, b) => new Date(b.uploadedAt) - new Date(a.uploadedAt));
 
-      if (!result || !result.secure_url) {
-        throw new Error('Invalid response from Cloudinary');
+      const menuBlob = menuBlobs[0];
+
+      if (!menuBlob || !menuBlob.url) {
+        throw new Error('Menu data file not found in Vercel Storage');
       }
 
-      // Завантажуємо вміст файлу за URL
-      const menuResponse = await fetch(result.secure_url);
+      console.log('Found latest menu blob:', menuBlob.url);
+      const menuResponse = await fetch(menuBlob.url);
       if (!menuResponse.ok) {
-        throw new Error(`Failed to fetch menu content: ${menuResponse.statusText}`);
+        throw new Error(`Failed to fetch menu content from Blob: ${menuResponse.statusText}`);
       }
+      
       let menuData = await menuResponse.json();
       
       // Застосовуємо локальну підміну зображень
@@ -94,11 +79,11 @@ export default async function handler(req, res) {
       res.status(200).json({ 
         success: true,
         menu: menuData.menu || menuData,
-        source: 'cloudinary'
+        source: 'blob'
       });
       return;
-    } catch (cloudinaryError) {
-      console.log('Cloudinary error, trying local fallback:', cloudinaryError);
+    } catch (blobError) {
+      console.log('Vercel Blob error, trying local fallback:', blobError.message);
       
       // Спроба завантажити локальний файл меню як резервний варіант
       try {
@@ -116,7 +101,7 @@ export default async function handler(req, res) {
             success: true,
             menu: menuToReturn,
             source: 'local_fallback',
-            warning: 'Cloudinary failed, loaded local backup'
+            warning: 'Vercel Blob failed, loaded local backup'
           });
           return;
         }
@@ -124,26 +109,20 @@ export default async function handler(req, res) {
         console.error('Failed to load local fallback:', localError);
       }
       
-      // Якщо файл не знайдено в Cloudinary, повертаємо порожнє меню
-      if (cloudinaryError.http_code === 404) {
-        console.log('Menu not found in Cloudinary, returning empty menu');
-        
-        res.status(200).json({ 
-          success: true,
-          menu: {},
-          source: 'empty'
-        });
-        return;
-      } else {
-        throw cloudinaryError;
-      }
+      // Якщо файл взагалі не знайдено, повертаємо пусте меню
+      res.status(200).json({ 
+        success: true,
+        menu: {},
+        source: 'empty',
+        warning: 'All storage sources failed'
+      });
     }
     
   } catch (error) {
     console.error('Error loading menu:', error);
     res.status(500).json({ 
       error: 'Error loading menu data: ' + (error.message || 'Unknown error'),
-      details: error
+      details: error.message
     });
   }
 }
