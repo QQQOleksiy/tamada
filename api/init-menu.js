@@ -15,12 +15,13 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Vercel Blob configuration missing' });
   }
 
+
   try {
     // Читаємо дані з локального JSON файлу
     const menuPath = path.join(process.cwd(), 'data', 'tm-menu.json');
     const menuFile = fs.readFileSync(menuPath, 'utf8');
     const menuData = JSON.parse(menuFile);
-    
+
     // Беремо тільки меню (без обгортки "menu")
     const menuToUpload = menuData.menu || menuData;
 
@@ -38,7 +39,7 @@ export default async function handler(req, res) {
       const { blobs } = await list({ token: blobToken });
       const oldBlobs = blobs
         .filter(b => b.pathname.startsWith('tamada-menu/menu-data') && b.url !== blob.url);
-      
+
       if (oldBlobs.length > 0) {
         const oldUrls = oldBlobs.map(b => b.url);
         await del(oldUrls, { token: blobToken });
@@ -48,12 +49,12 @@ export default async function handler(req, res) {
       console.error('Failed to clean up old menu files:', cleanupError.message);
     }
 
-    res.status(200).json({ 
+    res.status(200).json({
       success: true,
       message: 'Full menu data uploaded successfully from tm-menu.json',
       url: blob.url
     });
-    
+
   } catch (error) {
     console.error('Error uploading menu:', error);
     res.status(500).json({ error: 'Error uploading menu data: ' + error.message });
